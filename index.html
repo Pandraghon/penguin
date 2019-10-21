@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sylvain Albasser - Curriculum Vitae</title>
+    <meta name="author" content="Sylvain Albasser" />
+    <meta name="description" content="Je suis Sylvain Albasser, développeur web et software. J'aime le C++, le PHP, le Javascript, l'HTML et le CSS." />
+    <meta name="keywords" content="sylvain, albasser, cv, developper, web, software" />
+
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="Glaucus Pocus" />
+    <meta name="twitter:title" content="Sylvain Albasser - Curriculum Vitae" />
+    <meta name="twitter:description" content="Je suis Sylvain Albasser, développeur web et software. J'aime le C++, le PHP, le Javascript, l'HTML et le CSS." />
+    <meta name="twitter:creator" content="Sylvain Albasser" />
+    <meta name="twitter:image" content="" />
+
+    <!-- Open Graph Data -->
+    <meta property="og:title" content="Sylvain Albasser - Curriculum Vitae" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="bob.bob.bob" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Je suis Sylvain Albasser, développeur web et software. J'aime le C++, le PHP, le Javascript, l'HTML et le CSS." />
+    <meta property="og:site_name" content="Glaucus Pocus" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/folder.css" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <link href="img/icon.ico" rel="icon" type="image/x-icon" />
+
+    <script src="js/app.js" type="module" defer></script>
+</head>
+<body>
+<ul class="lang-container">
+    <li class="folder other-lang">
+        <div class="folder-frontpage">
+            <div class="folder-border">
+                <span class="folder-label">English <img src="img/flags/United-Kingdom.png" alt="en_US"></span>
+            </div>
+        </div>
+    </li>
+    <li class="folder other-lang">
+        <div class="folder-frontpage">
+            <div class="folder-border">
+                <span class="folder-label">Deutsch <img src="img/flags/Germany.png" alt="de_DE"></span>
+            </div>
+        </div>
+    </li>
+</ul>
+<nav class="folder">
+    <div class="folder-frontpage">
+        <div class="folder-border"><span class="folder-label">Français <img src="img/flags/France.png" alt="fr_FR"></span></div>
+    </div>
+    <a href="#personal_information" class="page" title="Informations personnelles">
+        <div class="tab">
+            Moi
+        </div>
+    </a>
+    <a href="#portfolio" class="page" title="Portfolio">
+        <div class="tab">
+            Portfolio
+        </div>
+    </a>
+    <a href="#contact" class="page" title="Contact">
+        <div class="tab">
+            Contact
+        </div>
+    </a>
+</nav>
+
+    <main itemscope itemtype="https://schema.org/Person">
+        <section class="page" id="personal_information">
+            <h1>Sylvain Albasser<div class="badges-container"/></h1>
+            <aside class="page-aside aside-small">
+                <article class="page-article">
+                    <h2 class="article-title">Identité <small>Qui suis-je ?</small></h2>
+                    <div class="article-content info-container">
+                    </div>
+                </article>
+                <article class="page-article">
+                    <h2 class="article-title">Centres d'intérêt <small>Ce que j'aime ?</small></h2>
+                    <div class="article-content hobbies-container">
+                    </div>
+                </article>
+                <article class="page-article">
+                    <h2 class="article-title">Chronologie <small>D'où je viens ?</small></h2>
+                    <div class="article-content">
+                        {% include 'elements/timeline.twig' %}
+                    </div>
+                </article>
+            </aside>
+            <aside class="page-aside aside-main">
+                <article class="page-article">
+                    <h2 class="article-title">Présentation <small>À propos de moi ?</small></h2>
+                    <div class="article-content" itemprop="description">
+                        <p>Curieux et passionné, j'aime me tenir au courant des dernières tendances dans le domaine de la programmation.</p>
+                        <p>Sérieux, autodidacte et appliqué, je peux travailler seul ou en groupe.</p>
+                    </div>
+                </article>
+                <article class="page-article">
+                    <h2 class="article-title">Compétences <small>Que suis-je capable de faire ?</small></h2>
+                    <div class="article-content competences-container">
+                    </div>
+                </article>
+                <article class="page-article only-print">
+                    <h2 class="article-title">Site web <small>Où me trouver ?</small></h2>
+                    <div class="article-content">
+                        Vous trouverez plus de détails en allant sur <strong>http://cv.glaucus-pocus.net</strong>.
+                    </div>
+                </article>
+            </aside>
+
+            <nav class="page-navigation">
+                <a rel="prev" class="previous-page"><i class="fa fa-fw fa-arrow-left"></i></a>
+                <a class="menu" href="#" title="Retour au menu"><i class="fa fa-fw fa-folder-open fa-rotate-90"></i></a>
+                <a rel="next" class="next-page" href="#portfolio" title="Portfolio"><i class="fa fa-fw fa-arrow-right"></i></a>
+            </nav>
+        </section>
+        <section class="page" id="portfolio">
+            <article class="page-article">
+                <h2 class="article-title">Portfolio <small>Ce que j'ai fait ?</small></h2>
+                <div class="article-content portfolio-container">
+                </div>
+            </article>
+            <article class="page-article">
+                <h2 class="article-title">Outils <small>Ce que j'utilise ?</small></h2>
+                <div class="article-content">
+                    {% for data in technologies %}
+                    <img class="technology-img {{ data.format }}" src="img/{{ data.filename }}" alt="">
+                    {% endfor %}
+                </div>
+            </article>
+            <article class="page-article">
+                <h2 class="article-title">Social <small>Où me trouver ?</small></h2>
+                <div class="article-content social-container">
+                </div>
+            </article>
+
+            <nav class="page-navigation">
+                <a rel="prev" class="previous-page" href="#personal_information" title="Informations personnelles"><i class="fa fa-fw fa-arrow-left"></i></a>
+                <a class="menu" href="#" title="Retour au menu"><i class="fa fa-fw fa-folder-open fa-rotate-90"></i></a>
+                <a rel="next" class="next-page" href="#contact" title="Contact"><i class="fa fa-fw fa-arrow-right"></i></a>
+            </nav>
+        </section>
+        <section class="page" id="contact">
+            <article class="page-article full-page">
+                <h2 class="article-title">Contact <small>Comment me joindre ? (en développement)</small></h2>
+                <div class="article-content">
+                    <form class="contact-letter" method="post" id="email-form">
+                        <div class="sender">
+                            <input type="text" name="sender_name" placeholder="Votre nom" value="{{ form.sender_name }}" required />
+                            <input type="email" name="sender_email" placeholder="Votre email" value="{{ form.sender_email }}" required />
+                        </div>
+                        <div class="date">
+                            {{ "now"|date("d/m/Y") }}
+                        </div>
+                        <div class="object">
+                            <label for="letter-object">Objet : </label><input type="text" name="object" id="letter-object" value="{{ form.object }}" />
+                        </div>
+                        <textarea name="message" class="message" placeholder="Votre message ..." required>{{ form.message }}</textarea>
+                        <div class="form-actions">
+                            <button type="submit"><i class="fa fa-send"></i> Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <nav class="page-navigation">
+                <a rel="prev" class="previous-page" href="#portfolio" title="Portfolio"><i class="fa fa-fw fa-arrow-left"></i></a>
+                <a class="menu" href="#" title="Retour au menu"><i class="fa fa-fw fa-folder-open fa-rotate-90"></i></a>
+                <a rel="next" class="next-page"><i class="fa fa-fw fa-arrow-right"></i></a>
+            </nav>
+        </section>
+    </main>
+
+    <aside id="wip" style="display: block; position: fixed; top: 0; left: 0; right: 0; text-align: center; background: coral; z-index: 10000; line-height: 1.5;">En construction</aside>
+
+    <template id="page-template">
+
+    </template>
+
+    <template id="info-template">
+        <div class="info-group">
+            <i class="fa fa-fw fa-{{ data.icon }} info-icon"></i>
+            <span class="info-text" itemprop="{{ data.itemprop }}">{{ data.text }}</span>
+        </div>
+    </template>
+
+    <template id="hobby-template">
+        <i class="fa fa-2x fa-{{ data.icon }}" title="{{ data.name }}"></i>
+    </template>
+
+    <template id="competence-group-template">
+        <div class="comp-group">
+            <h3 class="comp-group-title">{{ data.header }}</h3>
+        </div>
+    </template>
+
+    <template id="competence-template">
+        <div class="comp">
+            <meter id="{{ data.id }}" min="0" max="10" value="{{ data.value }}"></meter>
+            <span class="comp-name">{{ data.name }}</span>
+        </div>
+    </template>
+
+    <template id="portfolio-template">
+        <div class="project">
+            <h3 class="project-title">{{ data.name }}</h3>
+            <p class="project-for">Pour <strong>{{ data.for }}</strong></p>
+            <p class="project-description">{{ data.description }}</p>
+            <p class="project-technologies">Technologies : {{ data.technologies }}</p>
+            <p class="project-git">Sources : <a href="{{ data.git }}">{{ data.git }}</a></p>
+        </div>
+    </template>
+
+    <template id="social-template">
+        <a class="social-logo" href="{{ data.url }}" rel="me" target="_blank" title="{{ data.alt }} - {{ data.ref }}" itemprop="url">
+            <img src="img/{{ data.img }}" alt="{{ data.alt }}">
+        </a>
+    </template>
+
+    <template id="badge-template">
+        <a class="badge" href="{{ data.link }}" rel="me" target="_blank" title="{{ data.alt }}">
+            <img src="{{ data.img }}" alt="{{ data.alt }}" />
+        </a>
+    </template>
+
+</body>
+</html>
