@@ -1,0 +1,53 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@import 'compass/css3/box-shadow';
+body {
+  background-color: white;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.folder {
+  display: none;
+}
+main {
+  .page:target {
+    display: none;
+  }
+
+  .page {
+    display: none;
+
+    &:first-child {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      @include box-shadow(none);
+    }
+  }
+}
+.page-article + .page-article {
+  margin-top: 30px;
+
+  &.only-print {
+    margin-top: 50px;
+  }
+}
+.page-navigation {
+  display: none;
+}
+.timeline-bubble {
+  @include box-shadow(none);
+}
+.comp-name {
+  color: black !important;
+}
+.only-print {
+  display: block;
+}
+strong {
+  font-weight: bold;
+}

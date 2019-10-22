@@ -1,0 +1,50 @@
+.contact-letter {
+  @include display-flex();
+  @include flex-direction(column);
+  height: 100%;
+
+  input {
+    border: none;
+    border-bottom: 1px solid darkslategray;
+  }
+
+  .sender,
+  .date,
+  .object,
+  .message {
+    margin-bottom: 20px;
+  }
+
+  .sender {
+    width: 35%;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .date {
+    @include align-self(flex-end);
+  }
+
+  .object {
+    @include display-flex;
+    @include flex-direction(row);
+    width: 100%;
+
+    input {
+      @include flex(1);
+    }
+  }
+
+  .message {
+    @include flex-grow(5);
+    resize: none;
+  }
+}
+
+form {
+  .form-actions {
+    text-align: center;
+  }
+}
