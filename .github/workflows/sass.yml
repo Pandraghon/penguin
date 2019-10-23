@@ -22,13 +22,14 @@ jobs:
       run: |
         CURRENT_DIR=$PWD
         TARGET_BRANCH="gh-pages"
-        git clone ${{ github.repository }} out_$TARGET_BRANCH -b $TARGET_BRANCH
+        REPO=https://github.com/${{ github.repository }}
+        git clone $REPO out_$TARGET_BRANCH -b $TARGET_BRANCH
         
         cd out_$TARGET_BRANCH
         sass $CURRENT_DIR/scss:css
         git add .
         git commit -m "Update gh-pages ${{ github.sha }}"
-        git push ${{ github.repository }} HEAD:gh-pages
+        git push $REPO HEAD:gh-pages
         
         cd $CURRENT_DIR
         rm -rf out_$TARGET_BRANCH
