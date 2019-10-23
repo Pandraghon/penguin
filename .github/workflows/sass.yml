@@ -1,0 +1,34 @@
+name: Build gh-pages
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Install sass
+      run: npm install -g sass
+    - name: Deploy
+      run: |
+        CURRENT_DIR=$PWD
+        TARGET_BRANCH="gh-pages"
+        git clone ${{ github.repository }} out_$TARGET_BRANCH -b $TARGET_BRANCH
+        
+        cd out_$TARGET_BRANCH
+        sass $CURRENT_DIR/scss:css
+        git add .
+        git commit -m "Update gh-pages ${{ github.sha }}"
+        git push ${{ github.repository }} HEAD:gh-pages
+        
+        cd $CURRENT_DIR
+        rm -rf out_$TARGET_BRANCH
