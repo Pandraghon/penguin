@@ -26,7 +26,7 @@ jobs:
         git clone $REPO out_$TARGET_BRANCH -b $TARGET_BRANCH
         
         cd out_$TARGET_BRANCH
-        sass $CURRENT_DIR/scss:css
+        sass $CURRENT_DIR/sass:css
         git add .
         git commit -m "Update gh-pages ${{ github.sha }}"
         git push $REPO HEAD:gh-pages
