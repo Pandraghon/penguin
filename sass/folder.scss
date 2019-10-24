@@ -15,10 +15,22 @@ $meter-color-default: #4fa2f7;
 $meter-language:        ('cpp',   'java',   'sql',  'c',  'vba',  'ppt',            'word',           'excel',          'access',         'latex',          'html',   'css',    'php',    'js',     'jee',    'seo',    'english',          'deutsch');
 $meter-language-color:  (#f34b7d, #b07219,  #ccc,   #555, #aaa,   rgb(209, 68, 36), rgb(42, 86, 153), rgb(31, 111, 67), rgb(161, 53, 56), rgb(0, 128, 128), #e44b23,  #563d7c,  #4F5D95,  #f1e05a,  #b07219,  #aaaada,  rgb(84, 112, 170),  rgb(234, 195, 37));
 
-@include font-face("TabFont", font-files($font-path + 'journal/journal.ttf'));
-@include font-face("SmallTitleFont", font-files($font-path + 'enigmatic/Enigma__2.ttf'));
-@include font-face("TextFont", font-files($font-path + 'candela/CandelaBook.otf'));
-@include font-face("TitleFont", font-files($font-path + 'ubuntu/UbuntuMono-R.ttf'));
+@font-face {
+  font-family: "TabFont";
+  src: url($font-path + 'journal/journal.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SmallTitleFont";
+  src: url($font-path + 'enigmatic/Enigma__2.ttf') format('truetype');
+}
+@font-face {
+  font-family: "TextFont";
+  src: url($font-path + 'candela/CandelaBook.otf') format('opentype');
+}
+@font-face {
+  font-family: "TitleFont";
+  src: url($font-path + 'ubuntu/UbuntuMono-R.ttf') format('truetype');
+}
 
 html,
 body {
