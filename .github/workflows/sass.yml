@@ -22,7 +22,7 @@ jobs:
       run: |
         CURRENT_DIR=$PWD
         TARGET_BRANCH="gh-pages"
-        REPO=https://github.com/${{ github.repository }}
+        REPO=https://Pandraghon:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         git clone $REPO out_$TARGET_BRANCH -b $TARGET_BRANCH
         
         cd out_$TARGET_BRANCH
