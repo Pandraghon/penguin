@@ -15,10 +15,22 @@ $meter-color-default: #4fa2f7;
 $meter-language:        ('cpp',   'java',   'sql',  'c',  'vba',  'ppt',            'word',           'excel',          'access',         'latex',          'html',   'css',    'php',    'js',     'jee',    'seo',    'english',          'deutsch');
 $meter-language-color:  (#f34b7d, #b07219,  #ccc,   #555, #aaa,   rgb(209, 68, 36), rgb(42, 86, 153), rgb(31, 111, 67), rgb(161, 53, 56), rgb(0, 128, 128), #e44b23,  #563d7c,  #4F5D95,  #f1e05a,  #b07219,  #aaaada,  rgb(84, 112, 170),  rgb(234, 195, 37));
 
-@include font-face("TabFont", font-files($font-path + 'journal/journal.ttf'));
-@include font-face("SmallTitleFont", font-files($font-path + 'enigmatic/Enigma__2.ttf'));
-@include font-face("TextFont", font-files($font-path + 'candela/CandelaBook.otf'));
-@include font-face("TitleFont", font-files($font-path + 'ubuntu/UbuntuMono-R.ttf'));
+@font-face {
+  font-family: "TabFont";
+  src: url($font-path + 'journal/journal.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SmallTitleFont";
+  src: url($font-path + 'enigmatic/Enigma__2.ttf') format('truetype');
+}
+@font-face {
+  font-family: "TextFont";
+  src: url($font-path + 'candela/CandelaBook.otf') format('opentype');
+}
+@font-face {
+  font-family: "TitleFont";
+  src: url($font-path + 'ubuntu/UbuntuMono-R.ttf') format('truetype');
+}
 
 html,
 body {
@@ -34,13 +46,13 @@ body {
 .folder {
   position: absolute;
   z-index: 4;
-  @include perspective(500px);
+  perspective: 500px;
   top: 50%;
   left: 50%;
   width: 250px;
   height: 340px;
-  @include translate(-50%, -50%);
-  @include transition(all .3s ease);
+  transform: translate(-50%, -50%);
+  transition: all .3s ease;
   border-bottom-right-radius: $border-radius;
   background-color: $folder-background-color;
 
@@ -60,21 +72,21 @@ body {
     z-index: 10 + length($tab-background-colors) + 1;
     width: 210px;
     height: 340px;
-    @include transform-origin(left, center);
-    @include rotateY(-8deg);
-    @include transition(all .4s ease);
+    transform-origin: left, center;
+    transform: rotateY(-8deg);
+    transition: all .4s ease;
     border-top-right-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
     background-color: darken($folder-background-color, 5);
-    @include box-shadow(0 0 20px 2px rgba(0, 0, 0, .3));
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .3);
   }
 
   .folder-border {
     position: absolute;
     width: 340px;
     text-align: right;
-    @include transform-origin(right, top);
-    @include transform(translateX(-100%) rotateZ(-90deg));
+    transform-origin: right, top;
+    transform: translateX(-100%) rotateZ(-90deg);
     @include box-shadow(inset 0 -1px 0 0 darken($folder-background-color, 20), inset 0 -2px 0 0 lighten($folder-background-color, 10));
   }
 
@@ -98,7 +110,7 @@ body {
   &:hover, &:focus {
 
     .folder-frontpage {
-      @include rotateY(-10deg);
+      transform: rotateY(-10deg);
     }
   }
 
@@ -108,10 +120,10 @@ body {
     height: 320px;
     top: 10px;
     right: 25px;
-    @include transition(all .2s ease);
+    transition: all .2s ease;
     border: 1px solid darken($page-background-color, 13);
     background-color: $page-background-color;
-    @include box-shadow(0 0 5px 5px rgba(0, 0, 0, .05));
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .05);
 
     .tab {
       content: '';
@@ -119,23 +131,23 @@ body {
       right: -65px;
       width: 70px;
       height: 35px;
-      @include rotate(90deg);
-      @include transform-origin(bottom, left);
+      transform: rotate(90deg);
+      transform-origin: bottom, left;
       font-family: 'TabFont';
       font-size: 1.3em;
       text-align: center;
       text-transform: capitalize;
       line-height: 35px;
-      @include box-shadow(2px 0 2px 2px rgba(0, 0, 0, .05));
+      box-shadow: 2px 0 2px 2px rgba(0, 0, 0, .05);
     }
 
     @for $i from 1 through length($tab-background-colors) {
       &:nth-of-type(#{$i}) {
         z-index: 10 + length($tab-background-colors) + 1 - $i;
-        @include transform(rotate(#{$i}deg) translateX($i - 1%));
+        transform: rotate(#{$i}deg) translateX($i - 1%);
 
         &:hover, &:focus {
-          @include transform(rotate(#{$i + 6}deg) translateX($i + 14%));
+          transform: rotate(#{$i + 6}deg) translateX($i + 14%);
         }
 
         .tab {
@@ -147,26 +159,26 @@ body {
   }
 
   &.other-lang {
-    @include transform-origin(bottom, left);
-    @include box-shadow(0 0 2px 2px rgba(0, 0, 0, .05));
+    transform-origin: bottom, left;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .05);
     @for $i from 1 through 3 {
       &:nth-of-type(#{$i}) {
         z-index: 3 - $i;
-        @include transform(translate(-50%, -50%) rotate(#{$i * (-5)}deg));
+        transform: translate(-50%, -50%) rotate(#{$i * (-5)}deg);
         &:hover {
-          @include transform(translate(-50%, -53%) rotate(#{$i * (-5)}deg));
-          @include box-shadow(0 0 2px 4px rgba(0, 0, 0, .05));
+          transform: translate(-50%, -53%) rotate(#{$i * (-5)}deg);
+          box-shadow: 0 0 2px 4px rgba(0, 0, 0, .05);
         }
       }
     }
 
     .folder-frontpage {
-      @include rotateY(0deg);
-      @include box-shadow(none);
+      transform: rotateY(0deg);
+      box-shadow: none;
     }
     &:hover, &:focus {
       .folder-frontpage {
-        @include rotateY(0deg);
+        transform: rotateY(0deg);
       }
     }
   }
@@ -178,7 +190,7 @@ main {
   height: 100%;
   padding: 50px 0;
   overflow: auto;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 
   .page {
     position: relative;
@@ -191,7 +203,7 @@ main {
     margin: auto;
     box-sizing: border-box;
     background-color: $page-background-color;
-    @include box-shadow(0 0 5px 5px rgba(0, 0, 0, .05));
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .05);
 
     &:target {
       display: block;
@@ -254,15 +266,15 @@ h1 {
 
   &.full-page {
     height: 100%;
-    @include display-flex;
-    @include flex-direction(column);
+    display: flex;
+    flex-direction: column;
 
     .article-title {
-      @include flex(0);
+      flex: 0;
     }
 
     .article-content {
-      @include flex(1);
+      flex: 1;
     }
   }
 }
@@ -276,7 +288,7 @@ h1 {
   bottom: 3%;
   left: 50%;
   width: 100px;
-  @include translateX(-50%);
+  translateX: -50%;
   text-align: center;
 
   a {
@@ -317,7 +329,7 @@ meter {
   &::-webkit-meter-optimum-value,
   &::-webkit-meter-suboptimum-value,
   &::-webkit-meter-even-less-good-value {
-    @include border-radius(2px);
+    border-radius: 2px;
   }
 
   @include meter-color($meter-color-default);
@@ -342,7 +354,7 @@ meter {
   position: absolute;
   left: 5px;
   top: 50%;
-  @include translateY(-50%);
+  transform: translateY(-50%);
   font-size: .75em;
 
   img {
@@ -358,10 +370,10 @@ meter {
     & + .comp-name {
       @if lightness($c) > 50 {
         color: darken($c, 30);
-        @include text-shadow(0 0 2px 2px lighten($c, 10));
+        text-shadow: 0 0 2px 2px lighten($c, 10);
       } @else {
         color: lighten($c, 50);
-        @include text-shadow(0 0 2px 2px darken($c, 10));
+        text-shadow: 0 0 2px 2px darken($c, 10);
       }
     }
   }

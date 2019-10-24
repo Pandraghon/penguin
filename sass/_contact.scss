@@ -1,6 +1,6 @@
 .contact-letter {
-  @include display-flex();
-  @include flex-direction(column);
+  display: flex;
+  flex-direction: column;
   height: 100%;
 
   input {
@@ -24,21 +24,21 @@
   }
 
   .date {
-    @include align-self(flex-end);
+    align-self: flex-end;
   }
 
   .object {
-    @include display-flex;
-    @include flex-direction(row);
+    display: flex;
+    flex-direction: row;
     width: 100%;
 
     input {
-      @include flex(1);
+      flex: 1;
     }
   }
 
   .message {
-    @include flex-grow(5);
+    flex-grow: 5;
     resize: none;
   }
 }
