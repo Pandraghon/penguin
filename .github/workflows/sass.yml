@@ -35,7 +35,7 @@ jobs:
         cp -r $CURRENT_DIR/fonts .
         cp -r $CURRENT_DIR/js .
         cp -r $CURRENT_DIR/index.html .
-        sass --style=compressed $CURRENT_DIR/scss:css
+        sass --style=compressed $CURRENT_DIR/sass:css
         git add .
         git commit -m "Update gh-pages ${{ github.sha }}"
         git push $REPO HEAD:gh-pages
