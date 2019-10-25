@@ -30,7 +30,12 @@ jobs:
         git clone $REPO out_$TARGET_BRANCH -b $TARGET_BRANCH
         
         cd out_$TARGET_BRANCH
-        sass $CURRENT_DIR/sass:css
+        rm -rf img sass css fonts js index.html
+        cp -r $CURRENT_DIR/img .
+        cp -r $CURRENT_DIR/fonts .
+        cp -r $CURRENT_DIR/js .
+        cp -r $CURRENT_DIR/index.html .
+        sass --style=compressed $CURRENT_DIR/scss:css
         git add .
         git commit -m "Update gh-pages ${{ github.sha }}"
         git push $REPO HEAD:gh-pages
