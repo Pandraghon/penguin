@@ -25,7 +25,7 @@ const infos = [
     },
     {
         icon: 'at',
-        text: 'salbasser@gmail.com',
+        text: 'salbasser[at]gmail.com',
         itemprop: 'email'
     }
 ];
