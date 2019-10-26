@@ -1,7 +1,7 @@
 const badges = [
     {
         id: 'stackshare',
-        img: 'http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat',
+        img: 'https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat',
         link: 'https://stackshare.io/Pandraghon/favorites',
         alt: 'StackShare - Pandraghon'
     }
