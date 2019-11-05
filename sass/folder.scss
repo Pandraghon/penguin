@@ -43,6 +43,10 @@ body {
   background-color: $body-background-color;
 }
 
+.lang-container {
+  list-style: none;
+}
+
 .folder {
   position: absolute;
   z-index: 4;
