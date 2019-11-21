@@ -70,7 +70,7 @@ const competences = [
             {
                 id: 'sql',
                 name: 'SQL',
-                value: 6
+                value: 7
             },
             {
                 id: 'c',
@@ -93,6 +93,11 @@ const competences = [
                 value: 9
             },
             {
+                id: 'js',
+                name: 'JS',
+                value: 9
+            },
+            {
                 id: 'css3',
                 name: 'CSS3',
                 value: 8.8
@@ -100,11 +105,6 @@ const competences = [
             {
                 id: 'php',
                 name: 'PHP',
-                value: 8.5
-            },
-            {
-                id: 'js',
-                name: 'JS',
                 value: 8
             },
             {
@@ -205,6 +205,14 @@ const portfolio = [
         technologies: ['C++', 'Qt', 'interface', 'dessin', 'geométrie'],
         git: 'https://github.com/Pandraghon/TriaGUI'
     },
+    {
+        id: 'gw2icon',
+        name: 'GW2Icon',
+        for: 'Projet personnel',
+        description: 'Plugin pour inclure des icônes du jeu GW2 dans des pages Web en CSS pur.',
+        technologies: ['CSS', 'Sass', 'NodeJS', 'HTML', 'gulp.js', 'TravisCI'],
+        git: 'https://github.com/Pandraghon/anoname'
+    }
     {
         id: 'meta4',
         name: 'SaaSTools',
