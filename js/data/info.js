@@ -217,7 +217,7 @@ const portfolio = [
         description: 'Plugin pour inclure des icônes du jeu GW2 dans des pages Web en CSS pur.',
         technologies: ['CSS', 'Sass', 'NodeJS', 'HTML', 'gulp.js', 'TravisCI'],
         git: 'https://github.com/Pandraghon/anoname'
-    }
+    },
     {
         id: 'meta4',
         name: 'SaaSTools',
