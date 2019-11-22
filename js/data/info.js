@@ -73,6 +73,11 @@ const competences = [
                 value: 7
             },
             {
+                id: 'python',
+                name: 'Python',
+                value: 7
+            },
+            {
                 id: 'c',
                 name: 'C',
                 value: 5.5
