@@ -81,11 +81,6 @@ const competences = [
                 id: 'c',
                 name: 'C',
                 value: 5.5
-            },
-            {
-                id: 'vba',
-                name: 'VBA',
-                value: 4
             }
         ]
     },
