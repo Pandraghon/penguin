@@ -4,7 +4,9 @@ export default class CVElement {
 			node = document.importNode(template, true),
 			el = node.querySelector(root_el);
 		
-		el.outerHTML = el.outerHTML.replace(/{{ data.(.*?) }}/g, (_, p1) => data[p1]);
+		el.outerHTML = el.outerHTML
+			.replace(/{{ if data.(.*?) }}(.*?){{ endif }}/g, (_, p1, p2) => data.hasOwnProperty(p1) ? p2 : '')
+			.replace(/{{ data.(.*?) }}/g, (_, p1) => data[p1]);
 
 		if (sub_element) {
 			const sub_len = data[sub_element['key']].length,
