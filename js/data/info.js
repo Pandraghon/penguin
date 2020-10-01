@@ -201,7 +201,7 @@ const portfolio = [
         id: 'gw2trivia',
         name: 'GW2Trivia',
         for: 'Projet personnel',
-        description: 'Site web du jeu Questions pour un Quaggan, un quiz de culture générale sur l'univers de GW2',
+        description: 'Site web du jeu Questions pour un Quaggan, un quiz de culture générale sur l\'univers de GW2',
         technologies: ['NodeJS', 'PostgreSQL', 'Postgraphile', 'QraphQL', 'JS', 'SEO', 'HTML', 'CSS'],
         git: 'https://github.com/gw2ocs/gw2trivia',
         url: 'https://gw2trivia.com'
