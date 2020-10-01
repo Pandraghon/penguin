@@ -198,6 +198,15 @@ const timeline = {
 
 const portfolio = [
     {
+        id: 'gw2trivia',
+        name: 'GW2Trivia',
+        for: 'Projet personnel',
+        description: 'Site web du jeu Questions pour un Quaggan, un quiz de culture générale sur l'univers de GW2',
+        technologies: ['NodeJS', 'PostgreSQL', 'Postgraphile', 'QraphQL', 'JS', 'SEO', 'HTML', 'CSS'],
+        git: 'https://github.com/gw2ocs/gw2trivia',
+        url: 'https://gw2trivia.com'
+    },
+    {
         id: 'triagui',
         name: 'TriaGUI',
         for: 'Projet M1 MIAGE',
@@ -211,7 +220,8 @@ const portfolio = [
         for: 'Projet personnel',
         description: 'Plugin pour inclure des icônes du jeu GW2 dans des pages Web en CSS pur.',
         technologies: ['CSS', 'Sass', 'NodeJS', 'HTML', 'gulp.js', 'TravisCI'],
-        git: 'https://github.com/Pandraghon/anoname'
+        git: 'https://github.com/gw2ocs/gw2icon',
+        url: 'http://gw2icon.com'
     },
     {
         id: 'meta4',
