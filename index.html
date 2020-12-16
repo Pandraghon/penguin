@@ -92,8 +92,7 @@
                 </article>
                 <article class="page-article">
                     <h2 class="article-title">Chronologie <small>D'où je viens ?</small></h2>
-                    <div class="article-content">
-                        {% include 'elements/timeline.twig' %}
+                    <div class="article-content timeline-container">
                     </div>
                 </article>
             </aside>
@@ -196,6 +195,20 @@
 
     <template id="hobby-template">
         <i class="fa fa-2x fa-{{ data.icon }}" title="{{ data.name }}"></i>
+    </template>
+
+    <template id="timeline-template">
+        <div class="timeline-block">
+            <div class="timeline-bubble">
+                <i class="fa fa-{{ data.icon }}" title="{{ data.icon_text }}"></i>
+            </div>
+            <div class="timeline-content">
+                <h3>{{ data.title }}</h3>
+                <p class="timeline-location">{{ data.location }}</p>
+                <p>{{ data.description }}</p>
+                <span class="timeline-date">{{ data.start }}{{ if data.end }} - {{ data.end }}{{ endif }}</span>
+            </div>
+        </div>
     </template>
 
     <template id="competence-group-template">

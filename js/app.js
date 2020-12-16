@@ -27,6 +27,14 @@ const init = () => {
 	}
 	hobby_container.append(...hobby_fragment.childNodes);
 	
+	const timeline_len = timeline.length,
+		timeline_container = document.querySelector('.timeline-container'),
+		timeline_fragment = document.createDocumentFragment();
+	for (let i = 0 ; i < timeline_len ; i++) {
+		timeline_fragment.appendChild(new CVElement('timeline-template', '.timeline-block', timeline[i]));
+	}
+	timeline_container.append(...timeline_fragment.childNodes);
+	
 	const competence_len = competences.length,
 		competence_container = document.querySelector('.competences-container'),
 		competence_fragment = document.createDocumentFragment();
