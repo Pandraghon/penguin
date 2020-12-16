@@ -166,8 +166,9 @@ const competences = [
     },
 ];
 
-const timeline = {
-    miage: {
+const timeline = [
+    {
+        id: 'miage',
         icon: 'graduation-cap',
         icon_text: 'Formation',
         start: '2012',
@@ -176,7 +177,8 @@ const timeline = {
         location: 'UHA, Mulhouse',
         description: '(Méthodes Informatiques Appliquées à la Gestion d\'Entreprise)'
     },
-    meta4: {
+    {
+        id: 'meta4',
         icon: 'briefcase',
         icon_text: 'Stage',
         start: '05/2015',
@@ -186,7 +188,8 @@ const timeline = {
         description: 'Développement d\'un outil en interne gérant la livraison de package à travers un workflow.',
         technologies: ['Access', 'PHP', 'JS', 'HTML']
     },
-    lla: {
+    {
+        id: 'lla',
         icon: 'graduation-cap',
         icon_text: 'Formation',
         start: '2012',
@@ -194,9 +197,18 @@ const timeline = {
         location: 'Lycée Louis Armand, Mulhouse',
         description: 'opt. Sciences de l\'Ingénieur, spé. Maths, mention Très Bien'
     }
-};
+];
 
 const portfolio = [
+    {
+        id: 'gw2achievements',
+        name: 'GW2Achievements',
+        for: 'Projet personnel',
+        description: 'Générateur d\'images (succès GW2) en fonction de plusieurs paramètres',
+        technologies: ['NodeJS', 'Canvas'],
+        git: 'https://github.com/gw2ocs/gw2achievements',
+        url: 'https://gw2achievements.com'
+    },
     {
         id: 'gw2trivia',
         name: 'GW2Trivia',
