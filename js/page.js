@@ -58,7 +58,7 @@ export default class Page {
             }
 
             if (options.template.class) {
-                data_container.classList.add(options.class);
+                data_container.classList.add(options.template.class);
             }
 
         return node;
