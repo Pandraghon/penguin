@@ -63,7 +63,8 @@ export default class Page {
 
         if (navigation.length <= 1) return;
 
-        let previous = next = false;
+        let previous = false,
+            next = false;
 
         if (id === navigation[0].id) {
             next = navigation[1];
