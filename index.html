@@ -40,14 +40,21 @@
 </head>
 <body>
 <ul class="lang-container">
-    <li class="folder other-lang">
+    <li class="folder other-lang current" data-lang="fr">
+        <div class="folder-frontpage">
+            <div class="folder-border">
+                <span class="folder-label">Français <img src="img/flags/France.png" alt="fr_FR"></span>
+            </div>
+        </div>
+    </li>
+    <li class="folder other-lang" data-lang="en">
         <div class="folder-frontpage">
             <div class="folder-border">
                 <span class="folder-label">English <img src="img/flags/United-Kingdom.png" alt="en_US"></span>
             </div>
         </div>
     </li>
-    <li class="folder other-lang">
+    <li class="folder other-lang" data-lang="de">
         <div class="folder-frontpage">
             <div class="folder-border">
                 <span class="folder-label">Deutsch <img src="img/flags/Germany.png" alt="de_DE"></span>
@@ -183,7 +190,26 @@
     <aside id="wip" style="display: block; position: fixed; top: 0; left: 0; right: 0; text-align: center; background: coral; z-index: 10000; line-height: 1.5;">En construction</aside>
 
     <template id="page-template">
+        <section class="page"></section>
+    </template>
 
+    <template id="article-template">
+        <article class="page-article">
+            <h2 class="article-title"></h2>
+            <div class="article-content"></div>
+        </article>
+    </template>
+
+    <template id="navigation-template">
+        <nav class="page-navigation">
+            <a rel="prev" class="previous-page"><i class="fa fa-fw fa-arrow-left"></i></a>
+            <a class="menu" href="#" title="Retour au menu"><i class="fa fa-fw fa-folder-open fa-rotate-90"></i></a>
+            <a rel="next" class="next-page"><i class="fa fa-fw fa-arrow-right"></i></a>
+        </nav>
+    </template>
+
+    <template id="description-template">
+        <p></p>
     </template>
 
     <template id="info-template">
@@ -227,11 +253,11 @@
     <template id="portfolio-template">
         <div class="project">
             <h3 class="project-title">{{ data.name }}</h3>
-            {{ if data.for }}<p class="project-for">Pour <strong>{{ data.for }}</strong></p>{{ endif }}
+            {{ if data.for }}<p class="project-for"><span class="label-for">Pour :</span> <strong>{{ data.for }}</strong></p>{{ endif }}
             {{ if data.description }}<p class="project-description">{{ data.description }}</p>{{ endif }}
-            {{ if data.technologies }}<p class="project-technologies">Technologies : {{ data.technologies }}</p>{{ endif }}
-            {{ if data.git }}<p class="project-git">Sources : <a href="{{ data.git }}">{{ data.git }}</a></p>{{ endif }}
-            {{ if data.url }}<p class="project-url">Lien : <a href="{{ data.url }}">{{ data.url }}</a></p>{{ endif }}
+            {{ if data.technologies }}<p class="project-technologies"><span class="label-technologies">Technologies :</span> {{ data.technologies }}</p>{{ endif }}
+            {{ if data.git }}<p class="project-git"><span class="label-git">Sources :</span> <a href="{{ data.git }}">{{ data.git }}</a></p>{{ endif }}
+            {{ if data.url }}<p class="project-url"><span class="label-url">Lien :</span> <a href="{{ data.url }}">{{ data.url }}</a></p>{{ endif }}
         </div>
     </template>
 

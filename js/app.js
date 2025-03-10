@@ -1,8 +1,21 @@
-import ui from './ui.js';
+import paginator from './paginator.js';
 import CVElement from './components.js';
+import Page from './page.js';
 import { badges, infos, hobbies, competences, timeline, portfolio, social } from './data/info.js';
 
-const init = () => {
+const data = {};
+
+const render = (data) => {
+	const pages_len = data.pages.length,
+		pages_container = document.querySelector('main'),
+		pages_fragment = document.createDocumentFragment(),
+		pages_navigation = data.pages.map(({ id, title }) => { id, title });
+	for (let i = 0 ; i < pages_len ; i++) {
+		pages_fragment.appendChild(new Page(data.pages[i], pages_navigation));
+	}
+	pages_container.innerHTML = '';
+	pages_container.append(pages_fragment);
+
 	const badge_len = badges.length,
 		badge_container = document.querySelector('.badges-container'),
 		badge_fragment = document.createDocumentFragment();
@@ -11,7 +24,7 @@ const init = () => {
 	}
 	badge_container.append(...badge_fragment.childNodes);
 
-	const info_len = infos.length,
+	/*const info_len = infos.length,
 		info_container = document.querySelector('.info-container'),
 		info_fragment = document.createDocumentFragment();
 	for (let i = 0 ; i < info_len ; i++) {
@@ -62,9 +75,16 @@ const init = () => {
 	for (let i = 0 ; i < social_len ; i++) {
 		social_fragment.appendChild(new CVElement('social-template', '.social-logo', social[i]));
 	}
-	social_container.append(...social_fragment.childNodes);
+	social_container.append(...social_fragment.childNodes);*/
 
-	ui();
+	paginator();
 };
 
-init();
+document.querySelectorAll('.other-lang').addEventListener('click', (el) => {
+	const lang = el.dataset.lang;
+	document.querySelector('.other-lang.current').classList.remove('current');
+	el.classList.append('current');
+	import(`./data/${lang}.js`).then(render);
+})
+
+import(`./data/fr.js`).then(render);

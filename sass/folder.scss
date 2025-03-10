@@ -176,6 +176,10 @@ body {
       }
     }
 
+    &.current {
+      display: none;
+    }
+
     .folder-frontpage {
       transform: rotateY(0deg);
       box-shadow: none;
