@@ -16,7 +16,7 @@ const render = (data) => {
 	pages_container.innerHTML = '';
 	pages_container.append(pages_fragment);
 
-	const badge_len = badges.length,
+	/*const badge_len = badges.length,
 		badge_container = document.querySelector('.badges-container'),
 		badge_fragment = document.createDocumentFragment();
 	for (let i = 0 ; i < badge_len ; i++) {
@@ -24,7 +24,7 @@ const render = (data) => {
 	}
 	badge_container.append(...badge_fragment.childNodes);
 
-	/*const info_len = infos.length,
+	const info_len = infos.length,
 		info_container = document.querySelector('.info-container'),
 		info_fragment = document.createDocumentFragment();
 	for (let i = 0 ; i < info_len ; i++) {
@@ -84,7 +84,7 @@ document.querySelectorAll('.other-lang').addEventListener('click', (el) => {
 	const lang = el.dataset.lang;
 	document.querySelector('.other-lang.current').classList.remove('current');
 	el.classList.append('current');
-	import(`./data/${lang}.js`).then(render);
+	import(`./data/${lang}.js`).then(render).catch(console.error);
 })
 
-import(`./data/fr.js`).then(render);
+import(`./data/fr.js`).then(render).catch(console.error);
