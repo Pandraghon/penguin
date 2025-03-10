@@ -65,44 +65,6 @@ const data = {
                     name: 'Pâtisserie',
                     icon: 'birthday-cake'
                 }]
-            }, {
-                title: 'Chronologie',
-                subtitle: 'D\'où je viens ?',
-                template: {
-                    name: 'timeline-template',
-                    class: 'timeline-container',
-                    root: '.timeline-block'
-                },
-                data: [{
-                    id: 'miage',
-                    icon: 'graduation-cap',
-                    icon_text: 'Formation',
-                    start: '2012',
-                    end: 'Maintenant',
-                    title: 'Master MIAGE',
-                    location: 'UHA, Mulhouse',
-                    description: '(Méthodes Informatiques Appliquées à la Gestion d\'Entreprise)'
-                },
-                {
-                    id: 'meta4',
-                    icon: 'briefcase',
-                    icon_text: 'Stage',
-                    start: '05/2015',
-                    end: '09/2015',
-                    title: 'Stage de L3',
-                    location: 'META4, Mulhouse',
-                    description: 'Développement d\'un outil en interne gérant la livraison de package à travers un workflow.',
-                    technologies: ['Access', 'PHP', 'JS', 'HTML']
-                },
-                {
-                    id: 'lla',
-                    icon: 'graduation-cap',
-                    icon_text: 'Formation',
-                    start: '2012',
-                    title: 'Baccalauréat Scientifique',
-                    location: 'Lycée Louis Armand, Mulhouse',
-                    description: 'opt. Sciences de l\'Ingénieur, spé. Maths, mention Très Bien'
-                }]
             }]
         }, {
             type: 'aside-main',
@@ -255,6 +217,68 @@ const data = {
                     content: `Vous trouverez plus de détails en allant sur <strong>https://pandraghon.github.io/penguin/</strong>.`
                 }]
             }],
+        }]
+    }, {
+        id: 'timeline',
+        title: 'Chronologie',
+        columns: [{
+            articles: [{
+                title: 'Chronologie',
+                subtitle: 'D\'où je viens ?',
+                template: {
+                    name: 'timeline-template',
+                    class: 'timeline-container',
+                    root: '.timeline-block'
+                },
+                data: [{
+                    id: 'syentys',
+                    icon: 'briefcase',
+                    icon_text: 'Emploi',
+                    start: '2017',
+                    end: 'Maintenant',
+                    title: 'Ingénieur informatique',
+                    location: 'Syentys, Mulhouse',
+                    description: 'Intégration de l\'ERP Odoo pour différents clients, allant du fabricant de matériels dentaires au boucher-charcutier, en passant par du jouranlisme financier, du fabricant de distributeurs de pizza, ...',
+                    technologies: ['ERP', 'Python', 'JS', 'HTML', 'Java', 'Talend', 'CI/CD', 'Github', 'AWS', 'Azure', ]
+                }, {
+                    id: 'syentys_internship',
+                    icon: 'briefcase',
+                    icon_text: 'Stage',
+                    start: '02/2017',
+                    end: '07/2017',
+                    title: 'Stage de M2',
+                    location: 'Syentys, Mulhouse',
+                    description: 'Développement de modules pour l\'intégration de l\'ERP Odoo chez un fabricant de produits dentaires. Recherche sur une version embarquée d\'Odoo.',
+                    technologies: ['ERP', 'Python', 'JS', 'HTML']
+                }, {
+                    id: 'miage',
+                    icon: 'graduation-cap',
+                    icon_text: 'Formation',
+                    start: '2012',
+                    end: '2017',
+                    title: 'Master MIAGE',
+                    location: 'UHA, Mulhouse',
+                    description: '(Méthodes Informatiques Appliquées à la Gestion d\'Entreprise)'
+                }, {
+                    id: 'meta4',
+                    icon: 'briefcase',
+                    icon_text: 'Stage',
+                    start: '05/2015',
+                    end: '09/2015',
+                    title: 'Stage de L3',
+                    location: 'META4, Mulhouse',
+                    description: 'Développement d\'un outil en interne gérant la livraison de package à travers un workflow.',
+                    technologies: ['Access', 'PHP', 'JS', 'HTML']
+                }, {
+                    id: 'lla',
+                    icon: 'graduation-cap',
+                    icon_text: 'Formation',
+                    start: '2012',
+                    title: 'Baccalauréat Scientifique',
+                    location: 'Lycée Louis Armand, Mulhouse',
+                    description: 'opt. Sciences de l\'Ingénieur, spé. Maths, mention Très Bien'
+                }]
+            }]
         }]
     }, {
         id: 'portfolio',
