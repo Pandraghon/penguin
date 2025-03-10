@@ -48,7 +48,7 @@ export default class Page {
             el.querySelector('.article-title').innerHTML = `${title} <small>${subtitle}</small>`;
 
             const data_len = data.length,
-                data_container = document.querySelector('.article-content');
+                data_container = el.querySelector('.article-content');
             for (let i = 0 ; i < data_len ; i++) {
                 data_container.appendChild(new CVElement(options.template.name, options.template.root, data[i], options.template.sub));
             }
