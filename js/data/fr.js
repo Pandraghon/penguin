@@ -17,6 +17,7 @@ const data = {
                 subtitle: 'Qui suis-je ?',
                 template: {
                     name: 'info-template',
+                    class: 'info-container',
                     root: '.info-group'
                 },
                 data: [{
@@ -41,6 +42,7 @@ const data = {
                 subtitle: 'Ce que j\'aime ?',
                 template: {
                     name: 'hobby-template',
+                    class: 'hobbies-container',
                     root: 'i'
                 },
                 data: [{
@@ -68,6 +70,7 @@ const data = {
                 subtitle: 'D\'où je viens ?',
                 template: {
                     name: 'timeline-template',
+                    class: 'timeline-container',
                     root: '.timeline-block'
                 },
                 data: [{
@@ -108,6 +111,7 @@ const data = {
                 subtitle: 'À propos de moi ?',
                 template: {
                     name: 'description-template',
+                    class: 'description-container',
                     root: 'p'
                 },
                 data: [{
@@ -120,6 +124,7 @@ const data = {
                 subtitle: 'Que suis-je capable de faire ?',
                 template: {
                     name: 'competence-group-template',
+                    class: 'competences-container',
                     root: '.comp-group',
                     sub: {
                         key: 'comps',
@@ -241,6 +246,7 @@ const data = {
             }, {
                 title: 'Site web',
                 subtitle: 'Où me trouver ?',
+                class: 'only-print',
                 template: {
                     name: 'description-template',
                     root: 'p'
@@ -259,6 +265,7 @@ const data = {
                 subtitle: 'Ce que j\'ai fait ?',
                 template: {
                     name: 'portfolio-template',
+                    class: 'portfolio-container',
                     root: '.project'
                 },
                 data: [{
@@ -316,6 +323,7 @@ const data = {
                 subtitle: 'Ce que j\'utilise ?',
                 template: {
                     name: 'tool-template',
+                    class: 'tool-container',
                     root: '.tool'
                 },
                 data: [{
