@@ -7,7 +7,7 @@ const render = ({ data }) => {
 	const pages_len = data.pages.length,
 		pages_container = document.querySelector('main'),
 		pages_fragment = document.createDocumentFragment(),
-		pages_navigation = data.pages.map(({ id, title }) => { id, title });
+		pages_navigation = data.pages.map(({ id, title }) => ({ id, title }));
 	for (let i = 0 ; i < pages_len ; i++) {
 		pages_fragment.appendChild(new Page(data.pages[i], pages_navigation));
 	}
