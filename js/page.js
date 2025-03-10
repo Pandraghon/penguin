@@ -23,7 +23,7 @@ export default class Page {
             const column = data.columns[i];
             if (imax !== 1) {
                 parent = document.createElement('aside');
-                parent.classList.add(`page-aside ${column.type || ''}`);
+                parent.className = `page-aside ${column.type || ''}`;
             }
 
             for (let j = 0, jmax = column.articles.length ; j < jmax ; j++) {
