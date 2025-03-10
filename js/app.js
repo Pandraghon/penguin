@@ -3,9 +3,7 @@ import CVElement from './components.js';
 import Page from './page.js';
 import { badges, infos, hobbies, competences, timeline, portfolio, social } from './data/info.js';
 
-const data = {};
-
-const render = (data) => {
+const render = ({ data }) => {
 	const pages_len = data.pages.length,
 		pages_container = document.querySelector('main'),
 		pages_fragment = document.createDocumentFragment(),
