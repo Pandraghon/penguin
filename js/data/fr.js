@@ -100,16 +100,6 @@ const data = {
                     location: 'Lycée Louis Armand, Mulhouse',
                     description: 'opt. Sciences de l\'Ingénieur, spé. Maths, mention Très Bien'
                 }]
-            }, {
-                title: '',
-                subtitle: '',
-                template: {
-                    name: '',
-                    root: ''
-                },
-                data: [{
-                    
-                }]
             }]
         }, {
             type: 'aside-main',
