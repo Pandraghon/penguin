@@ -47,10 +47,18 @@ export default class Page {
 
             el.querySelector('.article-title').innerHTML = `${title} <small>${subtitle}</small>`;
 
+            if (options.class) {
+                el.classList.add(options.class);
+            }
+            
             const data_len = data.length,
                 data_container = el.querySelector('.article-content');
             for (let i = 0 ; i < data_len ; i++) {
                 data_container.appendChild(new CVElement(options.template.name, options.template.root, data[i], options.template.sub));
+            }
+
+            if (options.template.class) {
+                data_container.classList.add(options.class);
             }
 
         return node;
