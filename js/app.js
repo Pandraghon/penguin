@@ -80,11 +80,11 @@ const render = (data) => {
 	paginator();
 };
 
-document.querySelectorAll('.other-lang').addEventListener('click', (el) => {
+import(`./data/fr.js`).then(render).catch(console.error);
+
+document.querySelectorAll('.other-lang').forEach(nav => nav.addEventListener('click', (el) => {
 	const lang = el.dataset.lang;
 	document.querySelector('.other-lang.current').classList.remove('current');
 	el.classList.append('current');
 	import(`./data/${lang}.js`).then(render).catch(console.error);
-})
-
-import(`./data/fr.js`).then(render).catch(console.error);
+}));
