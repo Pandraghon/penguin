@@ -77,9 +77,11 @@ const data = {
                     root: 'p'
                 },
                 data: [{
-                    content: `Curieux et passionné, j'aime me tenir au courant des dernières tendances dans le domaine de la programmation logiciel et web.`,
+                    content: `Curieux et passionné, j'aime me tenir au courant des dernières tendances dans le domaine de la programmation logiciel et web (pratique d'une veille technologique assidue).`,
                 }, {
-                    content: `Sérieux, autodidacte et appliqué, je peux travailler seul ou en groupe.`,
+                    content: `Sérieux, autodidacte et appliqué, je peux travailler seul (autonomie) ou en groupe (au sein d'une équipe).`,
+                }, {
+                    content: `Rigueur, organisation, adaptabilité, consciencieux`,
                 }]
             }, {
                 title: 'Compétences',
@@ -87,123 +89,27 @@ const data = {
                 template: {
                     name: 'competence-group-template',
                     class: 'competences-container',
-                    root: '.comp-group',
-                    sub: {
-                        key: 'comps',
-                        container: false,
-                        template_name: 'competence-template',
-                        root_el: '.comp'
-                    }
+                    root: '.comp-group'
                 },
                 data: [{
                     header: 'Programmation',
-                    comps: [
-                        {
-                            id: 'cpp',
-                            name: 'C++',
-                            value: 8.5
-                        },
-                        {
-                            id: 'java',
-                            name: 'Java',
-                            value: 8
-                        },
-                        {
-                            id: 'sql',
-                            name: 'SQL',
-                            value: 7
-                        },
-                        {
-                            id: 'python',
-                            name: 'Python',
-                            value: 7
-                        },
-                        {
-                            id: 'c',
-                            name: 'C',
-                            value: 5.5
-                        }
-                    ]
-                },
-                {
+                    comps: '<strong>Javascript</strong>, <strong>SQL</strong>, Python, C++, C, Java',
+                    notions: 'C# (formation en cours), Typescript'
+                }, {
                     header: 'Web',
-                    comps: [
-                        {
-                            id: 'html5',
-                            name: 'HTML5',
-                            value: 9
-                        },
-                        {
-                            id: 'js',
-                            name: 'JS',
-                            value: 9
-                        },
-                        {
-                            id: 'css3',
-                            name: 'CSS3',
-                            value: 8.8
-                        },
-                        {
-                            id: 'php',
-                            name: 'PHP',
-                            value: 8
-                        },
-                        {
-                            id: 'seo',
-                            name: 'SEO',
-                            value: 7
-                        },
-                        {
-                            id: 'jee',
-                            name: 'JEE',
-                            value: 4.5
-                        }
-                    ]
-                },
-                {
+                    comps: '<strong>NodeJS</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, Sass, SCSS, less, Vue, SEO, PHP, CakePHP, Symfony',
+                    notions: 'Blazor (formation), SyncFusion'
+                }, {
+                    header: 'CI/CD',
+                    comps: '<strong>Docker</strong>, <strong>Github Actions</strong>, Docker Swarn',
+                    notions: 'Ansible, Jenkins, Kubernetes'
+                }, {
                     header: 'Bureautique',
-                    comps: [
-                        {
-                            id: 'powerpoint',
-                            name: 'Powerpoint',
-                            value: 9
-                        },
-                        {
-                            id: 'word',
-                            name: 'Word',
-                            value: 9
-                        },
-                        {
-                            id: 'excel',
-                            name: 'Excel',
-                            value: 7.5
-                        },
-                        {
-                            id: 'latex',
-                            name: 'LaTeX',
-                            value: 5.5
-                        },
-                        {
-                            id: 'access',
-                            name: 'Access',
-                            value: 3.5
-                        }
-                    ]
-                },
-                {
+                    comps: 'Excel, Word, Powerpoint, LaTeX, Access', 
+                }, {
                     header: 'Langues',
-                    comps: [
-                        {
-                            id: 'english',
-                            name: '<img src="/img/flags/United-Kingdom.png" alt="Anglais" />',
-                            value: 7.5
-                        },
-                        {
-                            id: 'deutsch',
-                            name: '<img src="/img/flags/Germany.png" alt="Allemand" />',
-                            value: 4
-                        }
-                    ]
+                    comps: 'Anglais',
+                    notions: 'Allemand, Japonais, Esperanto'
                 }]
             }, {
                 title: 'Site web',
