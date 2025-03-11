@@ -11,7 +11,7 @@ export default class Page {
         }
 
         if (data.headline) {
-            const headline = document.createElement('h2');
+            const headline = document.createElement('h1');
             headline.textContent = data.headline;
             el.append(headline);
         }
