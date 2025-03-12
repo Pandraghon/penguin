@@ -81,8 +81,8 @@ const render = ({ data }) => {
 import(`./data/fr.js`).then(render).catch(console.error);
 
 document.querySelectorAll('.other-lang').forEach(nav => nav.addEventListener('click', (el) => {
-	const lang = el.dataset.lang;
+	const lang = nav.dataset.lang;
 	document.querySelector('.other-lang.current').classList.remove('current');
-	el.classList.add('current');
+	nav.classList.add('current');
 	import(`./data/${lang}.js`).then(render).catch(console.error);
 }));
