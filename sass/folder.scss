@@ -166,7 +166,7 @@ body {
     transform-origin: bottom left;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, .05);
     @for $i from 1 through 3 {
-      &:nth-of-type(#{$i}) {
+      &:not(.current):nth-of-type(#{$i}) {
         z-index: 3 - $i;
         transform: translate(-50%, -50%) rotate(#{$i * (-5)}deg);
         &:hover {
@@ -297,7 +297,7 @@ h1 {
   bottom: 3%;
   left: 50%;
   width: 100px;
-  translateX: -50%;
+  transform: translateX(-50%);
   text-align: center;
 
   a {
