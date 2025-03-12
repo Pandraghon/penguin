@@ -84,5 +84,6 @@ document.querySelectorAll('.other-lang').forEach(nav => nav.addEventListener('cl
 	const lang = nav.dataset.lang;
 	document.querySelector('.other-lang.current').classList.remove('current');
 	nav.classList.add('current');
+	document.querySelector('nav.folder .folder-label').innerHTML = nav.querySelector('.folder-label').innerHTML;
 	import(`./data/${lang}.js`).then(render).catch(console.error);
 }));
