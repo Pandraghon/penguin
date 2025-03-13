@@ -5,12 +5,21 @@ import { badges, infos, hobbies, competences, timeline, portfolio, social } from
 
 const render = ({ data }) => {
 	const pages_len = data.pages.length,
+		tabs_container = document.querySelector('nav.folder'),
 		pages_container = document.querySelector('main'),
 		pages_fragment = document.createDocumentFragment(),
-		pages_navigation = data.pages.map(({ id, title }) => ({ id, title }));
+		tabs_fragment = document.createDocumentFragment(),
+		pages_navigation = data.pages.map(({ id, title, tab }) => ({ id, title, tab }));
+	
 	for (let i = 0 ; i < pages_len ; i++) {
+		// Generate menu navigation
+		tabs_fragment.appendChild(new CVElement('tab-template', 'a', pages_navigation[i]));
+
+		// Generate main content
 		pages_fragment.appendChild(new Page(data.pages[i], pages_navigation));
 	}
+	tabs_container.querySelectorAll('a.page').forEach(a => a.remove());
+	tabs_container.append(tabs_fragment);
 	pages_container.innerHTML = '';
 	pages_container.append(pages_fragment);
 

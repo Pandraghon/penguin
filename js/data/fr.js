@@ -9,6 +9,7 @@ const data = {
     pages: [{
         id: 'personal_information',
         title: 'Informations personnelles',
+        tab: 'Moi',
         headline: 'Sylvain Albasser',
         columns: [{
             type: 'aside-small',
@@ -97,7 +98,7 @@ const data = {
                     notions: 'C# (formation en cours), Typescript'
                 }, {
                     header: 'Web',
-                    comps: '<strong>NodeJS</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, Sass, SCSS, less, Vue, SEO, PHP, CakePHP, Symfony',
+                    comps: '<strong>NodeJS</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, Sass, SCSS, less, Express, Socket.io, Vue, SEO, PHP, CakePHP, Symfony',
                     notions: 'Blazor (formation), SyncFusion'
                 }, {
                     header: 'CI/CD',
@@ -127,6 +128,7 @@ const data = {
     }, {
         id: 'timeline',
         title: 'Chronologie',
+        tab: 'Chronologie',
         columns: [{
             articles: [{
                 title: 'Chronologie',
@@ -189,6 +191,7 @@ const data = {
     }, {
         id: 'portfolio',
         title: 'Portfolio',
+        tab: 'Portfolio',
         columns: [{
             articles: [{
                 title: 'Portfolio',
@@ -212,7 +215,7 @@ const data = {
                     name: 'GW2Trivia',
                     for: 'Projet personnel',
                     description: 'Site web du jeu Questions pour un Quaggan, un quiz de culture générale sur l\'univers de GW2',
-                    technologies: ['NodeJS', 'PostgreSQL', 'Postgraphile', 'QraphQL', 'JS', 'SEO', 'HTML', 'CSS'],
+                    technologies: ['NodeJS', 'PostgreSQL', 'plpgsql', 'Postgraphile', 'QraphQL', 'JS', 'SEO', 'HTML', 'CSS'],
                     git: 'https://github.com/gw2ocs/gw2trivia',
                     url: 'https://gw2trivia.com'
                 },

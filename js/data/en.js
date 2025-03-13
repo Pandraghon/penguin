@@ -9,6 +9,7 @@ const data = {
     pages: [{
         id: 'personal_information',
         title: 'Personnal information',
+        tab: 'Me',
         headline: 'Sylvain Albasser',
         columns: [{
             type: 'aside-small',
@@ -127,6 +128,7 @@ const data = {
     }, {
         id: 'timeline',
         title: 'Timeline',
+        tab: 'Timeline',
         columns: [{
             articles: [{
                 title: 'Timeline',
@@ -189,6 +191,7 @@ const data = {
     }, {
         id: 'portfolio',
         title: 'Portfolio',
+        tab: 'Portfolio',
         columns: [{
             articles: [{
                 title: 'Portfolio',
