@@ -94,8 +94,8 @@ const data = {
                 },
                 data: [{
                     header: 'Programmation',
-                    comps: '<strong>Javascript</strong>, <strong>SQL</strong>, Python, C++, C, Java',
-                    notions: 'C# (formation en cours), Typescript'
+                    comps: '<strong>Javascript</strong>, <strong>SQL</strong>, Python, C++, Qt, C, Java',
+                    notions: 'C# (formation en cours), Typescript, Android, MAUI'
                 }, {
                     header: 'Web',
                     comps: '<strong>NodeJS</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, Sass, SCSS, less, Express, Socket.io, Vue, SEO, PHP, CakePHP, Symfony',
@@ -106,7 +106,8 @@ const data = {
                     notions: 'Ansible, Jenkins, Kubernetes'
                 }, {
                     header: 'Bureautique',
-                    comps: 'Excel, Word, Powerpoint, LaTeX, Access', 
+                    comps: '<strong>Linux</strong>, <strong>Windows</strong>, <strong>Excel</strong>, <strong>LaTeX</strong>, Word, Powerpoint, Access', 
+                    notions: 'macOS'
                 }, {
                     header: 'Langues',
                     comps: 'Anglais',
