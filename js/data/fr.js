@@ -102,11 +102,11 @@ const data = {
                     notions: 'Blazor (formation), SyncFusion'
                 }, {
                     header: 'CI/CD',
-                    comps: '<strong>Docker</strong>, <strong>Github Actions</strong>, Docker Swarn',
-                    notions: 'Ansible, Jenkins, Kubernetes'
+                    comps: '<strong>Git</strong>, <strong>Docker</strong>, <strong>Github Actions</strong>, Docker Swarn',
+                    notions: 'AWS, Azure, Ansible, Jenkins, Kubernetes'
                 }, {
                     header: 'Bureautique',
-                    comps: '<strong>Linux</strong>, <strong>Windows</strong>, <strong>Excel</strong>, <strong>LaTeX</strong>, Word, Powerpoint, Access', 
+                    comps: '<strong>Linux</strong>, <strong>Windows</strong>, <strong>Excel</strong>, <strong>LaTeX</strong>, Word, Powerpoint, Access, Office365, GSuite', 
                     notions: 'macOS'
                 }, {
                     header: 'Langues',
