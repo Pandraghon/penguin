@@ -86,7 +86,7 @@ const data = {
                 }]
             }, {
                 title: 'Competences',
-                subtitle: 'What am I able to do?',
+                subtitle: 'What can I do?',
                 template: {
                     name: 'competence-group-template',
                     class: 'competences-container',
