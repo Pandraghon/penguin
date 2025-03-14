@@ -44,7 +44,7 @@ const data = {
                 template: {
                     name: 'hobby-template',
                     class: 'hobbies-container',
-                    root: 'i'
+                    root: 'div'
                 },
                 data: [{
                     name: 'Programmation',
@@ -65,6 +65,17 @@ const data = {
                 {
                     name: 'Pâtisserie',
                     icon: 'birthday-cake'
+                }]
+            }, {
+                title: 'Site web',
+                subtitle: 'Où me trouver ?',
+                class: 'only-print',
+                template: {
+                    name: 'description-template',
+                    root: 'p'
+                },
+                data: [{
+                    content: `Vous trouverez plus de détails en allant sur <strong>https://pandraghon.github.io/penguin/</strong>.`
                 }]
             }]
         }, {
@@ -112,17 +123,6 @@ const data = {
                     header: 'Langues',
                     comps: 'Anglais',
                     notions: 'Allemand, Japonais, Esperanto'
-                }]
-            }, {
-                title: 'Site web',
-                subtitle: 'Où me trouver ?',
-                class: 'only-print',
-                template: {
-                    name: 'description-template',
-                    root: 'p'
-                },
-                data: [{
-                    content: `Vous trouverez plus de détails en allant sur <strong>https://pandraghon.github.io/penguin/</strong>.`
                 }]
             }],
         }]

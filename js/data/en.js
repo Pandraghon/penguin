@@ -31,7 +31,7 @@ const data = {
                     itemprop: 'age'
                 }, {
                     icon: 'map-marker',
-                    text: 'Mulhouse, Alsace',
+                    text: 'Mulhouse, Alsace, France',
                     itemprop: 'address'
                 }, {
                     icon: 'at',
