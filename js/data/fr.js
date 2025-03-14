@@ -30,6 +30,10 @@ const data = {
                     text: 31, //DateTime::createFromFormat('d/m/Y', '10/01/1994', new DateTimeZone('Europe/Paris'))->diff(new DateTime('now', new DateTimeZone('Europe/Paris')))->y . ' ans',
                     itemprop: 'age'
                 }, {
+                    icon: 'graduation-cap',
+                    text: 'Master MIAGE',
+                    itemprop: 'award'
+                }, {
                     icon: 'map-marker',
                     text: 'Mulhouse, Alsace',
                     itemprop: 'address'
