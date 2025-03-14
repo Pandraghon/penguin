@@ -47,6 +47,9 @@ main {
 .only-print {
   display: block;
 }
+.no-print {
+  display: none;
+}
 strong {
   font-weight: bold;
 }

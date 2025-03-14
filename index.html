@@ -187,7 +187,7 @@
         </section>
     </main>
 
-    <aside id="wip" style="display: block; position: fixed; top: 0; left: 0; right: 0; text-align: center; background: coral; z-index: 10000; line-height: 1.5;">En construction</aside>
+    <aside id="wip" class="no-print" style="display: block; position: fixed; top: 0; left: 0; right: 0; text-align: center; background: coral; z-index: 10000; line-height: 1.5;">En construction</aside>
 
     <template id="page-template">
         <section class="page"></section>
@@ -228,7 +228,9 @@
     </template>
 
     <template id="hobby-template">
-        <i class="fa fa-2x fa-{{ data.icon }}" title="{{ data.name }}"></i>
+        <div>
+            <i class="fa fa-2x fa-fw fa-{{ data.icon }}"></i> {{ data.name }}
+        </div>
     </template>
 
     <template id="timeline-template">
