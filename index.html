@@ -240,9 +240,9 @@
             </div>
             <div class="timeline-content">
                 <h3 class="timeline-name">{{ data.title }}</h3>
-                <p class="timeline-location">{{ data.location }}</p>
+                <p class="timeline-location">{{ data.location }} <span class="timeline-date">{{ data.start }}{{ if data.end }} - {{ data.end }}{{ endif }}</span></p>
                 <p>{{ data.description }}</p>
-                <span class="timeline-date">{{ data.start }}{{ if data.end }} - {{ data.end }}{{ endif }}</span>
+                
             </div>
         </div>
     </template>
