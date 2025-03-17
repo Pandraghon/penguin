@@ -148,10 +148,15 @@ const data = {
                     icon: 'briefcase',
                     icon_text: 'Emploi',
                     start: '2017',
-                    end: 'Maintenant',
+                    end: '2025',
                     title: 'Ingénieur informatique',
                     location: 'Syentys, Mulhouse',
-                    description: 'Intégration de l\'ERP Odoo pour différents clients, allant du fabricant de matériels dentaires au boucher-charcutier, en passant par du jouranlisme financier, du fabricant de distributeurs de pizza, ...',
+                    description: `<ul>
+                    <li>Intégration de l'ERP Odoo pour différents clients, allant du fabricant de matériels dentaires au boucher-charcutier, en passant par du jouranlisme financier, du fabricant de distributeurs de pizza, ...</li>
+                    <li>Missions de développeur, chef de projet et architecte solution.</li>
+                    <li>Contribution à l'amélioration des procédures de développement et de déploiement.</li>
+
+                    </ul>`,
                     technologies: ['ERP', 'Python', 'JS', 'HTML', 'Java', 'Talend', 'CI/CD', 'Github', 'AWS', 'Azure', ]
                 }, {
                     id: 'syentys_internship',
@@ -161,7 +166,10 @@ const data = {
                     end: '07/2017',
                     title: 'Stage de M2',
                     location: 'Syentys, Mulhouse',
-                    description: 'Développement de modules pour l\'intégration de l\'ERP Odoo chez un fabricant de produits dentaires. Recherche sur une version embarquée d\'Odoo.',
+                    description: `<ul>
+                    <li>Développement de modules pour l'intégration de l'ERP Odoo chez un fabricant de produits dentaires.</li>
+                    <li>Recherche sur la faisabilité d'une version embarquée d'Odoo dans des ateliers ou des véhicules d'artisans.</li>
+                    </ul>`,
                     technologies: ['ERP', 'Python', 'JS', 'HTML']
                 }, {
                     id: 'miage',
@@ -180,7 +188,7 @@ const data = {
                     end: '09/2015',
                     title: 'Stage de L3',
                     location: 'META4, Mulhouse',
-                    description: 'Développement d\'un outil en interne gérant la livraison de package à travers un workflow.',
+                    description: 'Développement d\'un outil en interne de gestion et delivraison de packages à travers un workflow.',
                     technologies: ['Access', 'PHP', 'JS', 'HTML']
                 }, {
                     id: 'lla',
@@ -189,7 +197,7 @@ const data = {
                     start: '2012',
                     title: 'Baccalauréat Scientifique',
                     location: 'Lycée Louis Armand, Mulhouse',
-                    description: 'opt. Sciences de l\'Ingénieur, spé. Maths, mention Très Bien'
+                    description: 'Option Sciences de l\'Ingénieur, spécialité Maths, mention Très Bien'
                 }]
             }]
         }]
