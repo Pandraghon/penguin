@@ -157,7 +157,7 @@ const data = {
                     <li>Contribution à l'amélioration des procédures de développement et de déploiement.</li>
 
                     </ul>`,
-                    technologies: ['ERP', 'Python', 'JS', 'HTML', 'Java', 'Talend', 'CI/CD', 'Github', 'AWS', 'Azure', ]
+                    technologies: `ERP, Python, JS, HTML, Java, Talend, CI/CD, Github, AWS, Azure`,
                 }, {
                     id: 'syentys_internship',
                     icon: 'briefcase',
@@ -170,7 +170,7 @@ const data = {
                     <li>Développement de modules pour l'intégration de l'ERP Odoo chez un fabricant de produits dentaires.</li>
                     <li>Recherche sur la faisabilité d'une version embarquée d'Odoo dans des ateliers ou des véhicules d'artisans.</li>
                     </ul>`,
-                    technologies: ['ERP', 'Python', 'JS', 'HTML']
+                    technologies: `ERP, Python, JS, HTML`,
                 }, {
                     id: 'miage',
                     icon: 'graduation-cap',
@@ -189,7 +189,7 @@ const data = {
                     title: 'Stage de L3',
                     location: 'META4, Mulhouse',
                     description: 'Développement d\'un outil en interne de gestion et delivraison de packages à travers un workflow.',
-                    technologies: ['Access', 'PHP', 'JS', 'HTML']
+                    technologies: `Access, PHP, JS, HTML`,
                 }, {
                     id: 'lla',
                     icon: 'graduation-cap',

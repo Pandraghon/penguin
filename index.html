@@ -242,7 +242,7 @@
                 <h3 class="timeline-name">{{ data.title }}</h3>
                 <p class="timeline-location">{{ data.location }} <span class="timeline-date">{{ data.start }}{{ if data.end }} - {{ data.end }}{{ endif }}</span></p>
                 <p>{{ data.description }}</p>
-                
+                {{ id data.technologies }}<p><span class="label-technologies">Technologies :</span> {{ data.technologies }}</p>{{ endif }}
             </div>
         </div>
     </template>
