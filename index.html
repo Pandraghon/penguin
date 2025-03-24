@@ -239,8 +239,10 @@
                 <i class="fa fa-{{ data.icon }}" title="{{ data.icon_text }}"></i>
             </div>
             <div class="timeline-content">
-                <h3 class="timeline-name">{{ data.title }}</h3>
-                <p class="timeline-location">{{ data.location }} <span class="timeline-date">{{ data.start }}{{ if data.end }} - {{ data.end }}{{ endif }}</span></p>
+                <h3 class="timeline-name">
+                    {{ data.title }}
+                    <div class="timeline-location"><i class="fa fa-map-marker"></i> {{ data.location }} <span class="timeline-date"><i class="fa fa-calendar"></i> {{ data.start }}{{ if data.end }} - {{ data.end }}{{ endif }}</span></div>
+                </h3>
                 <p>{{ data.description }}</p>
                 {{ if data.technologies }}<p><span class="label-technologies">Technologies :</span> {{ data.technologies }}</p>{{ endif }}
             </div>
