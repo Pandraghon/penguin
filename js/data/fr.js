@@ -152,7 +152,7 @@ const data = {
                     title: 'Ingénieur informatique',
                     location: 'Syentys, Mulhouse',
                     description: `<ul>
-                    <li>Intégration de l'ERP Odoo pour différents clients, allant du fabricant de matériels dentaires au boucher-charcutier, en passant par du jouranlisme financier, du fabricant de distributeurs de pizza, ...</li>
+                    <li>Intégration de l'ERP Odoo pour différents clients, allant du fabricant de matériels dentaires au boucher-charcutier, en passant par du journalisme financier, du fabricant de distributeurs de pizza, ...</li>
                     <li>Missions de développeur, chef de projet et architecte solution.</li>
                     <li>Contribution à l'amélioration des procédures de développement et de déploiement.</li>
 
