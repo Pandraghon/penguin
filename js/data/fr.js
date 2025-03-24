@@ -97,11 +97,11 @@ const data = {
                     root: 'p'
                 },
                 data: [{
-                    content: `Curieux et passionné, j'aime me tenir au courant des dernières tendances dans le domaine de la programmation logiciel et web (pratique d'une veille technologique assidue).`,
+                    content: `Curieux et passionné, je me tiens régulièrement informé des dernières tendances en programmation logicielle et web grâce à une veille technologique active.`,
                 }, {
-                    content: `Sérieux, autodidacte et appliqué, je peux travailler seul (autonomie) ou en groupe (au sein d'une équipe).`,
+                    content: `Rigoureux, organisé et consciencieux, je m’adapte facilement aux nouvelles situations et aux exigences du travail en équipe comme en autonomie.`,
                 }, {
-                    content: `Rigueur, organisation, adaptabilité, consciencieux`,
+                    content: `Sérieux et appliqué, je mets un point d'honneur à produire un travail de qualité tout en restant en constante évolution.`,
                 }]
             }, {
                 title: 'Compétences',
