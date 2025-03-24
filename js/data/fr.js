@@ -79,7 +79,7 @@ const data = {
                     root: 'p'
                 },
                 data: [{
-                    content: `Vous trouverez plus de détails en allant sur <strong>https://pandraghon.github.io/penguin/</strong>.`
+                    content: `Vous trouverez plus de détails en allant sur <strong>https://pandraghon.github.io/penguin/</strong> ou sur <strong>https://www.linkedin.com/in/sylvain-albasser-97b104133/</strong>.`
                 }]
             }]
         }, {
