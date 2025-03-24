@@ -38,7 +38,7 @@ const data = {
                     text: 'Master MIAGE',
                     itemprop: 'award'
                 }, {
-                    icon: 'drivers-license-o',
+                    icon: 'id-card-o',
                     text: 'Permis B',
                     itemprop: 'award'
                 }, {
