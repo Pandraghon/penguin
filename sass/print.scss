@@ -11,7 +11,16 @@ h1 {
 .folder {
   display: none;
 }
-main {
+// print all page (except .no-print ones)
+.page {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  box-shadow: none;
+}
+// print only first page
+/*main {
   .page:target {
     display: none;
   }
@@ -27,7 +36,8 @@ main {
       box-shadow: none;
     }
   }
-}
+}*/
+////
 .page-article + .page-article {
   margin-top: 30px;
 
