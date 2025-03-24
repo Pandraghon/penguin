@@ -80,6 +80,10 @@
 
   p {
     margin: .5em 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   ul {
@@ -98,5 +102,6 @@
   .timeline-location {
     margin-top: 0;
     opacity: .7;
+    font-size: .85em;
   }
 }
