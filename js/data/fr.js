@@ -85,7 +85,7 @@ const data = {
                 data: [{
                     content: `Vous trouverez plus de détails en allant sur <strong>https://pandraghon.github.io/penguin/</strong>.`
                 }, {
-                    content: `<img src="./img/qr.png" style="display:block;max-width:90%;margin:auto;"/>`
+                    content: `<img src="./img/qr.png" style="display:block;max-width:75%;margin:auto;"/>`
                 }]
             }]
         }, {
