@@ -1,7 +1,6 @@
 import paginator from './paginator.js';
 import CVElement from './components.js';
 import Page from './page.js';
-import { badges, infos, hobbies, competences, timeline, portfolio, social } from './data/info.js';
 
 const render = ({ data }) => {
 	const pages_len = data.pages.length,
