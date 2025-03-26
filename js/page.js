@@ -8,6 +8,7 @@ export default class Page {
 
         if (data.id) {
             el.id = data.id;
+            el.style = `page: ${data.id}; break-after: page;`;
         }
 
         if (data.headline) {
