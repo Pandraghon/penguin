@@ -87,6 +87,27 @@ const data = {
                 }, {
                     content: `<img src="./img/qr.png" style="display:block;max-width:65%;margin:auto;"/>`
                 }]
+            }, {
+                title: 'Social',
+                subtitle: 'Où me trouver ?',
+                class: 'no-print',
+                template: {
+                    name: 'social-template',
+                    root: 'div'
+                },
+                data: [{
+                    link: 'https://github.com/Pandraghon',
+                    img: './img/social/github.png',
+                    title: 'Github'
+                }, {
+                    link: 'https://www.linkedin.com/in/sylvain-albasser-97b104133/',
+                    img: './img/social/linkedin.png',
+                    title: 'LinkedIn'
+                }, {
+                    link: 'https://www.codingame.com/profile/c400d304a25e14274cffded6005bb602690359',
+                    img: './img/social/codingame.png',
+                    title: 'Codingame'
+                }]
             }]
         }, {
             type: 'aside-main',
@@ -185,7 +206,7 @@ const data = {
                     end: '2017',
                     title: 'Master MIAGE',
                     location: 'UHA, Mulhouse',
-                    description: '(Méthodes Informatiques Appliquées à la Gestion d\'Entreprise)'
+                    description: '(Méthodes Informatiques Appliquées à la Gestion d\'Entreprise), mention Bien.'
                 }, {
                     id: 'meta4',
                     icon: 'briefcase',
@@ -258,7 +279,7 @@ const data = {
                 {
                     id: 'meta4',
                     name: 'SaaSTools',
-                    for: 'Stage M2 MIAGE chez META4',
+                    for: 'Stage L3 MIAGE chez META4',
                     description: 'Outil en interne gérant la livraison de package à travers un workflow.',
                     technologies: ['Access', 'PHP', 'MySQL', 'JS', 'AJAX', 'HTML', 'CSS']
                 },
