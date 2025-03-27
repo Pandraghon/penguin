@@ -290,6 +290,10 @@ h1 {
   }
 }
 
+.aside-small .page-article + .page-article {
+  margin-top: 32px;
+}
+
 .only-print {
   display: none;
 }
@@ -378,8 +382,16 @@ meter {
   }
 }
 
-.social img {
-  max-width: 32px;
+.social {
+  a {
+    color: inherit !important;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 32px;
+    vertical-align: middle;
+  }
 }
 
 @for $i from 1 through length($meter-language) {
