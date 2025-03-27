@@ -46,7 +46,7 @@ export default class Page {
 			node = document.importNode(template, true),
 			el = node.querySelector('article');
 
-            el.querySelector('.article-title').innerHTML = `${title} <small>${subtitle}</small>`;
+            el.querySelector('.article-title').innerHTML = `${title} <small class="no-print">${subtitle}</small>`;
 
             if (options.class) {
                 el.classList.add(options.class);
