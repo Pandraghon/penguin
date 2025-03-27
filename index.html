@@ -250,7 +250,7 @@
                     <div class="timeline-location"><i class="fa fa-map-marker"></i> {{ data.location }} <span class="timeline-date"><i class="fa fa-calendar"></i> {{ data.start }}{{ if data.end }} - {{ data.end }}{{ endif }}</span></div>
                 </h3>
                 <p>{{ data.description }}</p>
-                {{ if data.technologies }}<p><span class="label-technologies">Technologies :</span> {{ data.technologies }}</p>{{ endif }}
+                {{ if data.technologies }}<p><span class="label-technologies">{{ i18n.technologies }}</span> {{ data.technologies }}</p>{{ endif }}
             </div>
         </div>
     </template>
@@ -260,7 +260,7 @@
             <h3 class="comp-group-title">{{ data.header }}</h3>
             <p>
                 {{ data.comps }}
-                {{ if data.notions }}<br/><span class="label-notions">Notions :</span> {{ data.notions }}{{ endif }}
+                {{ if data.notions }}<br/><span class="label-notions">{{ i18n.notions }}</span> {{ data.notions }}{{ endif }}
             </p>
         </div>
     </template>
@@ -279,11 +279,11 @@
     <template id="portfolio-template">
         <div class="project">
             <h3 class="project-title">{{ data.name }}</h3>
-            {{ if data.for }}<p class="project-for"><span class="label-for">Pour :</span> <strong>{{ data.for }}</strong></p>{{ endif }}
+            {{ if data.for }}<p class="project-for"><span class="label-for">{{ i18n.for }}</span> <strong>{{ data.for }}</strong></p>{{ endif }}
             {{ if data.description }}<p class="project-description">{{ data.description }}</p>{{ endif }}
-            {{ if data.technologies }}<p class="project-technologies"><span class="label-technologies">Technologies :</span> {{ data.technologies }}</p>{{ endif }}
-            {{ if data.git }}<p class="project-git"><span class="label-git">Sources :</span> <a href="{{ data.git }}">{{ data.git }}</a></p>{{ endif }}
-            {{ if data.url }}<p class="project-url"><span class="label-url">Lien :</span> <a href="{{ data.url }}">{{ data.url }}</a></p>{{ endif }}
+            {{ if data.technologies }}<p class="project-technologies"><span class="label-technologies">{{ i18n.technologies }}</span> {{ data.technologies }}</p>{{ endif }}
+            {{ if data.git }}<p class="project-git"><span class="label-git">{{ i18n.git }}</span> <a href="{{ data.git }}">{{ data.git }}</a></p>{{ endif }}
+            {{ if data.url }}<p class="project-url"><span class="label-url">{{ i18n.url }}</span> <a href="{{ data.url }}">{{ data.url }}</a></p>{{ endif }}
         </div>
     </template>
 
