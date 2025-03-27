@@ -163,7 +163,7 @@ const data = {
         tab: 'Chronologie',
         columns: [{
             articles: [{
-                title: 'Chronologie',
+                title: 'Formation et expériences',
                 subtitle: 'D\'où je viens ?',
                 template: {
                     name: 'timeline-template',
@@ -290,17 +290,6 @@ const data = {
                     description: 'Générateur de noms en se basant sur le principe de la chaîne de Markov.',
                     technologies: ['C++', 'Qt'],
                     git: 'https://github.com/Pandraghon/anoname'
-                }]
-            }, {
-                title: 'Outils',
-                subtitle: 'Ce que j\'utilise ?',
-                template: {
-                    name: 'tool-template',
-                    class: 'tool-container',
-                    root: '.tool'
-                },
-                data: [{
-                    
                 }]
             }]
         }]
