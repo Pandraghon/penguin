@@ -1,6 +1,6 @@
 const data = {
     fields: {
-        for: 'For :',
+        for: 'Pour :',
         technologies: 'Technologies :',
         git: 'Sources :',
         url: 'Link :',
@@ -31,8 +31,16 @@ const data = {
                     itemprop: 'age'
                 }, {
                     icon: 'map-marker',
-                    text: 'Mulhouse, Alsace, France',
+                    text: 'Mulhouse, Alsace',
                     itemprop: 'address'
+                }, {
+                    icon: 'graduation-cap',
+                    text: 'Master MIAGE',
+                    itemprop: 'award'
+                }, {
+                    icon: 'id-card-o',
+                    text: 'Drivers license B',
+                    itemprop: 'award'
                 }, {
                     icon: 'at',
                     text: 'salbasser[at]gmail.com',
@@ -44,7 +52,7 @@ const data = {
                 template: {
                     name: 'hobby-template',
                     class: 'hobbies-container',
-                    root: 'i'
+                    root: 'div'
                 },
                 data: [{
                     name: 'Programmation',
@@ -66,6 +74,40 @@ const data = {
                     name: 'Pastry-making',
                     icon: 'birthday-cake'
                 }]
+            }, {
+                title: 'Website',
+                subtitle: 'Where to find me?',
+                class: 'only-print',
+                template: {
+                    name: 'description-template',
+                    root: 'p'
+                },
+                data: [{
+                    content: `More information on <strong>https://pandraghon.github.io/penguin/</strong>.`
+                }, {
+                    content: `<img src="./img/qr.png" style="display:block;max-width:65%;margin:auto;"/>`
+                }]
+            }, {
+                title: 'Social',
+                subtitle: 'Where to find me?',
+                class: 'no-print',
+                template: {
+                    name: 'social-template',
+                    root: 'div'
+                },
+                data: [{
+                    link: 'https://github.com/Pandraghon',
+                    img: './img/social/github.png',
+                    title: 'Github'
+                }, {
+                    link: 'https://www.linkedin.com/in/sylvain-albasser-97b104133/',
+                    img: './img/social/linkedin.png',
+                    title: 'LinkedIn'
+                }, {
+                    link: 'https://www.codingame.com/profile/c400d304a25e14274cffded6005bb602690359',
+                    img: './img/social/codingame.png',
+                    title: 'Codingame'
+                }]
             }]
         }, {
             type: 'aside-main',
@@ -78,11 +120,11 @@ const data = {
                     root: 'p'
                 },
                 data: [{
-                    content: `Curieux et passionné, j'aime me tenir au courant des dernières tendances dans le domaine de la programmation logiciel et web (pratique d'une veille technologique assidue).`,
+                    content: `Curious and passionate, I regularly keep up to date with the latest trends in software and web programming through an active technology watch.`,
                 }, {
-                    content: `Sérieux, autodidacte et appliqué, je peux travailler seul (autonomie) ou en groupe (au sein d'une équipe).`,
+                    content: `Rigorous, organized and conscientious, I adapt easily to new situations and to the requirements of working in a team or independently.`,
                 }, {
-                    content: `Rigueur, organisation, adaptabilité, consciencieux`,
+                    content: `Serious and diligent, I make it a point of honor to produce quality work while constantly evolving..`,
                 }]
             }, {
                 title: 'Competences',
@@ -94,34 +136,24 @@ const data = {
                 },
                 data: [{
                     header: 'Programmation',
-                    comps: '<strong>Javascript</strong>, <strong>SQL</strong>, Python, C++, C, Java',
-                    notions: 'C# (formation en cours), Typescript'
+                    comps: '<strong>Javascript</strong>, <strong>SQL</strong>, Python, C++, Qt, C, Java',
+                    notions: 'C# (current training), Typescript, Android, MAUI'
                 }, {
                     header: 'Web',
                     comps: '<strong>NodeJS</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, Sass, SCSS, less, Express, Socket.io, Vue, SEO, PHP, CakePHP, Symfony',
-                    notions: 'Blazor (formation), SyncFusion'
+                    notions: 'Blazor (training), SyncFusion'
                 }, {
                     header: 'CI/CD',
-                    comps: '<strong>Docker</strong>, <strong>Github Actions</strong>, Docker Swarn',
-                    notions: 'Ansible, Jenkins, Kubernetes'
+                    comps: '<strong>Git</strong>, <strong>Docker</strong>, <strong>Github Actions</strong>, Docker Swarn',
+                    notions: 'AWS, Azure, Ansible, Jenkins, Kubernetes'
                 }, {
                     header: 'Office Software',
-                    comps: 'Excel, Word, Powerpoint, LaTeX, Access', 
+                    comps: '<strong>Linux</strong>, <strong>Windows</strong>, <strong>Excel</strong>, <strong>LaTeX</strong>, Word, Powerpoint, Access, Office365, GSuite', 
+                    notions: 'macOS'
                 }, {
-                    header: 'Languages',
-                    comps: 'Anglais',
+                    header: 'Langues',
+                    comps: 'Français (mother tongue), Anglais (TOEIC)',
                     notions: 'Allemand, Japonais, Esperanto'
-                }]
-            }, {
-                title: 'Website',
-                subtitle: 'Where to find me?',
-                class: 'only-print',
-                template: {
-                    name: 'description-template',
-                    root: 'p'
-                },
-                data: [{
-                    content: `You can find out more by visiting <strong>https://pandraghon.github.io/penguin/</strong>.`
                 }]
             }],
         }]
@@ -131,7 +163,7 @@ const data = {
         tab: 'Timeline',
         columns: [{
             articles: [{
-                title: 'Timeline',
+                title: 'Background',
                 subtitle: 'Where do I come from?',
                 template: {
                     name: 'timeline-template',
@@ -141,50 +173,58 @@ const data = {
                 data: [{
                     id: 'syentys',
                     icon: 'briefcase',
-                    icon_text: 'Emploi',
+                    icon_text: 'Job',
                     start: '2017',
-                    end: 'Maintenant',
-                    title: 'Ingénieur informatique',
+                    end: '2025',
+                    title: 'IT Engineer',
                     location: 'Syentys, Mulhouse',
-                    description: 'Intégration de l\'ERP Odoo pour différents clients, allant du fabricant de matériels dentaires au boucher-charcutier, en passant par du jouranlisme financier, du fabricant de distributeurs de pizza, ...',
-                    technologies: ['ERP', 'Python', 'JS', 'HTML', 'Java', 'Talend', 'CI/CD', 'Github', 'AWS', 'Azure', ]
+                    description: `<ul>
+                    <li>Odoo ERP integration for various customers, including dental equipment manufacturers, butchers, financial journalists, pizza vending machine manufacturers, etc.</li>
+                    <li>Tasks as developer, project manager and solution architect.</li>
+                    <li>Contribution to the improvement of development and deployment procedures.</li>
+
+                    </ul>`,
+                    technologies: `ERP, Python, JS, HTML, Java, Talend, CI/CD, Github, AWS, Azure`,
                 }, {
                     id: 'syentys_internship',
                     icon: 'briefcase',
-                    icon_text: 'Stage',
+                    icon_text: 'Internship',
                     start: '02/2017',
                     end: '07/2017',
                     title: 'Stage de M2',
                     location: 'Syentys, Mulhouse',
-                    description: 'Développement de modules pour l\'intégration de l\'ERP Odoo chez un fabricant de produits dentaires. Recherche sur une version embarquée d\'Odoo.',
-                    technologies: ['ERP', 'Python', 'JS', 'HTML']
+                    description: `<ul>
+                    <li>Development of modules for Odoo ERP integration at a dental products manufacturer.</li>
+                    <li>Research into the feasibility of an on-board version of Odoo in artisan workshops or vehicles.</li>
+                    </ul>`,
+                    technologies: `ERP, Python, JS, HTML`,
                 }, {
                     id: 'miage',
                     icon: 'graduation-cap',
-                    icon_text: 'Formation',
+                    icon_text: 'Education',
                     start: '2012',
                     end: '2017',
                     title: 'Master MIAGE',
                     location: 'UHA, Mulhouse',
-                    description: '(Méthodes Informatiques Appliquées à la Gestion d\'Entreprise)'
+                    description: '(Méthodes Informatiques Appliquées à la Gestion d\'Entreprise), Upper Second Class Honours.'
                 }, {
                     id: 'meta4',
                     icon: 'briefcase',
-                    icon_text: 'Stage',
+                    icon_text: 'Internship',
                     start: '05/2015',
                     end: '09/2015',
-                    title: 'Stage de L3',
+                    title: 'L3 Internship',
                     location: 'META4, Mulhouse',
-                    description: 'Développement d\'un outil en interne gérant la livraison de package à travers un workflow.',
-                    technologies: ['Access', 'PHP', 'JS', 'HTML']
+                    description: 'Development of an in-house workflow-based package management and delivery tool.',
+                    technologies: `Access, PHP, JS, HTML`,
                 }, {
                     id: 'lla',
                     icon: 'graduation-cap',
-                    icon_text: 'Formation',
+                    icon_text: 'Education',
                     start: '2012',
-                    title: 'Baccalauréat Scientifique',
+                    title: 'French Scientific A-levels',
                     location: 'Lycée Louis Armand, Mulhouse',
-                    description: 'opt. Sciences de l\'Ingénieur, spé. Maths, mention Très Bien'
+                    description: 'Engineering Sciences option, specialising in Math, First Class Honours.'
                 }]
             }]
         }]
@@ -239,7 +279,7 @@ const data = {
                 {
                     id: 'meta4',
                     name: 'SaaSTools',
-                    for: 'Stage M2 MIAGE chez META4',
+                    for: 'Stage L3 MIAGE chez META4',
                     description: 'Outil en interne gérant la livraison de package à travers un workflow.',
                     technologies: ['Access', 'PHP', 'MySQL', 'JS', 'AJAX', 'HTML', 'CSS']
                 },
@@ -250,17 +290,6 @@ const data = {
                     description: 'Générateur de noms en se basant sur le principe de la chaîne de Markov.',
                     technologies: ['C++', 'Qt'],
                     git: 'https://github.com/Pandraghon/anoname'
-                }]
-            }, {
-                title: 'Tools',
-                subtitle: 'What do I use?',
-                template: {
-                    name: 'tool-template',
-                    class: 'tool-container',
-                    root: '.tool'
-                },
-                data: [{
-                    
                 }]
             }]
         }]
