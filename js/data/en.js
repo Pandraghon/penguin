@@ -5,6 +5,7 @@ const data = {
         git: 'Sources :',
         url: 'Link :',
         menu: 'Back to menu',
+        notions: 'Notions :',
     },
     pages: [{
         id: 'personal_information',

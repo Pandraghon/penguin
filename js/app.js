@@ -9,6 +9,8 @@ const render = ({ data }) => {
 		pages_fragment = document.createDocumentFragment(),
 		tabs_fragment = document.createDocumentFragment(),
 		pages_navigation = data.pages.map(({ id, title, tab }) => ({ id, title, tab }));
+
+	document.i18n = data.fields;
 	
 	for (let i = 0 ; i < pages_len ; i++) {
 		// Generate menu navigation
