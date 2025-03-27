@@ -4,18 +4,11 @@ export default class CVElement {
 			node = document.importNode(template, true),
 			el = node.querySelector(root_el);
 		
-		// Parse data in template
+		// Parse data in template and translate terms
 		el.outerHTML = el.outerHTML
 			.replace(/{{ if data.(.*?) }}(.*?){{ endif }}/g, (_, p1, p2) => data.hasOwnProperty(p1) ? p2 : '')
-			.replace(/{{ data.(.*?) }}/g, (_, p1) => data[p1]);
-
-		// Translate terms
-		el.querySelectorAll('[class^=label-]').forEach(element => {
-			const field = element.className.replace(/.*label-([^ ]+).*/, (_, p1) => p1);
-			if (Object.keys(document.i18n).indexOf(field) != -1) {
-				element.textContent = document.i18n[field];
-			}
-		});
+			.replace(/{{ data.(.*?) }}/g, (_, p1) => data[p1])
+			.replace(/{{ i18n.(.*?) }}/g, (_, p1) => document.i18n[p1]);
 
 		if (sub_element) {
 			const sub_len = data[sub_element['key']].length,
