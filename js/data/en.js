@@ -151,7 +151,7 @@ const data = {
                     comps: '<strong>Linux</strong>, <strong>Windows</strong>, <strong>Excel</strong>, <strong>LaTeX</strong>, Word, Powerpoint, Access, Office365, GSuite', 
                     notions: 'macOS'
                 }, {
-                    header: 'Langues',
+                    header: 'Languages',
                     comps: 'Français (mother tongue), Anglais (TOEIC)',
                     notions: 'Allemand, Japonais, Esperanto'
                 }]
@@ -215,7 +215,7 @@ const data = {
                     end: '09/2015',
                     title: 'L3 Internship',
                     location: 'META4, Mulhouse',
-                    description: 'Development of an in-house workflow-based package management and delivery tool.',
+                    description: 'Development of an internal workflow-based package management and delivery tool.',
                     technologies: `Access, PHP, JS, HTML`,
                 }, {
                     id: 'lla',
@@ -244,8 +244,8 @@ const data = {
                 data: [{
                     id: 'gw2achievements',
                     name: 'GW2Achievements',
-                    for: 'Projet personnel',
-                    description: 'Générateur d\'images (succès GW2) en fonction de plusieurs paramètres',
+                    for: 'Personnal project',
+                    description: 'Image generator (GW2 success) based on user-selectable parameters',
                     technologies: ['NodeJS', 'Canvas'],
                     git: 'https://github.com/gw2ocs/gw2achievements',
                     url: 'https://gw2achievements.com'
@@ -253,8 +253,8 @@ const data = {
                 {
                     id: 'gw2trivia',
                     name: 'GW2Trivia',
-                    for: 'Projet personnel',
-                    description: 'Site web du jeu Questions pour un Quaggan, un quiz de culture générale sur l\'univers de GW2',
+                    for: 'Personnal project',
+                    description: 'Website for Questions pour un Quaggan, a general knowledge quiz on the GW2 universe',
                     technologies: ['NodeJS', 'PostgreSQL', 'plpgsql', 'Postgraphile', 'QraphQL', 'JS', 'SEO', 'HTML', 'CSS'],
                     git: 'https://github.com/gw2ocs/gw2trivia',
                     url: 'https://gw2trivia.com'
@@ -262,16 +262,16 @@ const data = {
                 {
                     id: 'triagui',
                     name: 'TriaGUI',
-                    for: 'Projet M1 MIAGE',
-                    description: 'Outil de construction et de visualisation de triangulation de Delaunay sur plusieurs degrés.',
+                    for: 'M1 MIAGE project',
+                    description: 'Tool for constructing and displaying Delaunay triangulation over several degrees.',
                     technologies: ['C++', 'Qt', 'interface', 'dessin', 'geométrie'],
                     git: 'https://github.com/Pandraghon/TriaGUI'
                 },
                 {
                     id: 'gw2icon',
                     name: 'GW2Icon',
-                    for: 'Projet personnel',
-                    description: 'Plugin pour inclure des icônes du jeu GW2 dans des pages Web en CSS pur.',
+                    for: 'Personnal project',
+                    description: 'Plugin for including GW2 game icons in web pages, using pure CSS.',
                     technologies: ['CSS', 'Sass', 'NodeJS', 'HTML', 'gulp.js', 'TravisCI'],
                     git: 'https://github.com/gw2ocs/gw2icon',
                     url: 'http://gw2icon.com'
@@ -279,15 +279,15 @@ const data = {
                 {
                     id: 'meta4',
                     name: 'SaaSTools',
-                    for: 'Stage L3 MIAGE chez META4',
-                    description: 'Outil en interne gérant la livraison de package à travers un workflow.',
+                    for: 'L3 MIAGE Internship at META4',
+                    description: 'Internal tool to manage package delivery via a workflow.',
                     technologies: ['Access', 'PHP', 'MySQL', 'JS', 'AJAX', 'HTML', 'CSS']
                 },
                 {
                     id: 'anoname',
                     name: 'Anoname',
-                    for: 'Projet personnel',
-                    description: 'Générateur de noms en se basant sur le principe de la chaîne de Markov.',
+                    for: 'Personnal project',
+                    description: 'Name generator based on the Markov chain principle.',
                     technologies: ['C++', 'Qt'],
                     git: 'https://github.com/Pandraghon/anoname'
                 }]
