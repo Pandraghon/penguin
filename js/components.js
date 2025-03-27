@@ -10,7 +10,7 @@ export default class CVElement {
 			.replace(/{{ data.(.*?) }}/g, (_, p1) => data[p1]);
 
 		// Translate terms
-		el.querySelectorAll('[class^=label-]').array.forEach(element => {
+		el.querySelectorAll('[class^=label-]').forEach(element => {
 			const field = element.className.replace(/.*label-([^ ]+).*/, (_, p1) => p1);
 			if (Object.keys(document.i18n).indexOf(field) != -1) {
 				element.textContent = document.i18n[field];
