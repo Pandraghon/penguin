@@ -378,6 +378,10 @@ meter {
   }
 }
 
+.social img {
+  max-width: 32px;
+}
+
 @for $i from 1 through length($meter-language) {
   $c: nth($meter-language-color, $i);
   meter##{nth($meter-language, $i)} {
