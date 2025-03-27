@@ -153,8 +153,8 @@ const data = {
                     notions: 'macOS'
                 }, {
                     header: 'Languages',
-                    comps: 'Français (mother tongue), Anglais (TOEIC)',
-                    notions: 'Allemand, Japonais, Esperanto'
+                    comps: 'French (mother tongue), English (TOEIC)',
+                    notions: 'German, Japanese, Esperanto'
                 }]
             }],
         }]
