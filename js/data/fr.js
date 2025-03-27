@@ -152,7 +152,7 @@ const data = {
                     notions: 'macOS'
                 }, {
                     header: 'Langues',
-                    comps: 'Anglais',
+                    comps: 'Français (langue maternelle), Anglais (TOEIC)',
                     notions: 'Allemand, Japonais, Esperanto'
                 }]
             }],
