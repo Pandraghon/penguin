@@ -245,7 +245,7 @@ const data = {
                     id: 'gw2achievements',
                     name: 'GW2Achievements',
                     for: 'Projet personnel',
-                    description: 'Générateur d\'images (succès GW2) en fonction de plusieurs paramètres',
+                    description: 'Générateur d\'images (succès GW2) en fonction de paramètres sélectionnable par l\'utilisateur',
                     technologies: ['NodeJS', 'Canvas'],
                     git: 'https://github.com/gw2ocs/gw2achievements',
                     url: 'https://gw2achievements.com'
