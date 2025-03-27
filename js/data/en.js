@@ -1,6 +1,6 @@
 const data = {
     fields: {
-        for: 'Pour :',
+        for: 'For :',
         technologies: 'Technologies :',
         git: 'Sources :',
         url: 'Link :',
