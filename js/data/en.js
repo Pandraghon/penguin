@@ -302,6 +302,36 @@ const data = {
                 }]
             }]
         }]
+    }, {
+        id: 'portfolio2',
+        title: 'Portfolio (more)',
+        columns: [{
+            articles: [{
+                title: 'Portfolio (more)',
+                subtitle: 'What have I done?',
+                template: {
+                    name: 'portfolio-template',
+                    class: 'portfolio-container',
+                    root: '.project'
+                },
+                data: [{
+                    id: 'pageotron',
+                    name: 'Page-o-tron',
+                    for: 'Personnal project',
+                    description: 'Pages generator for the french MediaWiki of GW2, using data from the game\'s API.',
+                    technologies: ['NodeJS', 'MediaWiki', 'API'],
+                    git: 'https://github.com/Pandraghon/page-o-tron',
+                    url: 'https://pandraghon.github.io/page-o-tron/'
+                }, {
+                    id: 'amongus',
+                    name: 'BetterSabotage & UnknownImpostor',
+                    for: 'Personnal projects',
+                    description: 'Mods for the game AmongUs, injecting additional features.',
+                    technologies: ['C#', 'Modding'],
+                    git: 'https://github.com/Pandraghon/BetterSabotage',
+                }]
+            }]
+        }]
     }]
 };
 
