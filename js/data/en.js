@@ -247,7 +247,7 @@ const data = {
                     name: 'GW2Achievements',
                     for: 'Personnal project',
                     description: 'Image generator (GW2 success) based on user-selectable parameters',
-                    technologies: ['NodeJS', 'Canvas'],
+                    technologies: ['NodeJS', 'Canvas', 'Docker'],
                     git: 'https://github.com/gw2ocs/gw2achievements',
                     url: 'https://gw2achievements.com'
                 },
@@ -256,9 +256,17 @@ const data = {
                     name: 'GW2Trivia',
                     for: 'Personnal project',
                     description: 'Website for Questions pour un Quaggan, a general knowledge quiz on the GW2 universe',
-                    technologies: ['NodeJS', 'PostgreSQL', 'plpgsql', 'Postgraphile', 'QraphQL', 'JS', 'SEO', 'HTML', 'CSS'],
+                    technologies: ['NodeJS', 'PostgreSQL', 'plpgsql', 'Postgraphile', 'QraphQL', 'JS', 'API', 'SEO', 'HTML', 'CSS', 'Docker'],
                     git: 'https://github.com/gw2ocs/gw2trivia',
                     url: 'https://gw2trivia.com'
+                },
+                {
+                    id: 'ogden',
+                    name: 'Ogden',
+                    for: 'Personnal project',
+                    description: 'Discord Bot for Questions pour un Quaggan',
+                    technologies: ['NodeJS', 'PostgreSQL', 'QraphQL', 'JS', 'API', 'Discord', 'Docker'],
+                    git: 'https://github.com/gw2ocs/ogden'
                 },
                 {
                     id: 'triagui',
