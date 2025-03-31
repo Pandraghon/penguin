@@ -14,7 +14,9 @@ const render = ({ data }) => {
 	
 	for (let i = 0 ; i < pages_len ; i++) {
 		// Generate menu navigation
-		tabs_fragment.appendChild(new CVElement('tab-template', 'a', pages_navigation[i]));
+		if (pages_navigation[i].tab) {
+			tabs_fragment.appendChild(new CVElement('tab-template', 'a', pages_navigation[i]));
+		}
 
 		// Generate main content
 		pages_fragment.appendChild(new Page(data.pages[i], pages_navigation));
