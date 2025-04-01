@@ -50,10 +50,12 @@ main {
 ////
 .page-article + .page-article {
   margin-top: 30px;
-
-  &.only-print {
-    margin-top: 50px;
-  }
+}
+.aside-small .page-article + .page-article {
+  margin-top: 64px;
+}
+.aside-main .page-article + .page-article {
+  margin-top: 16px;
 }
 .page-navigation {
   display: none;

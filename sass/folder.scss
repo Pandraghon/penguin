@@ -222,7 +222,7 @@ main {
 }
 
 h1 {
-  margin-bottom: 0;
+  margin-bottom: .5em;
   font-family: TitleFont;
   font-size: 2.6em;
   font-weight: bold;
@@ -258,6 +258,7 @@ h1 {
     text-transform: uppercase;
     border-bottom: 3px solid $subtitle-color;
     margin-bottom: .1em;
+    margin-top: 0;
 
     small {
       font-family: TabFont;
@@ -291,7 +292,11 @@ h1 {
 }
 
 .aside-small .page-article + .page-article {
-  margin-top: 32px;
+  margin-top: 64px;
+}
+
+.aside-main .page-article + .page-article {
+  margin-top: 16px;
 }
 
 .only-print {
