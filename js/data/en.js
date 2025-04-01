@@ -28,19 +28,19 @@ const data = {
                     itemprop: 'name'
                 }, {
                     icon: 'birthday-cake',
-                    text: 31, //DateTime::createFromFormat('d/m/Y', '10/01/1994', new DateTimeZone('Europe/Paris'))->diff(new DateTime('now', new DateTimeZone('Europe/Paris')))->y . ' ans',
+                    text: '10/Jan/1994',
                     itemprop: 'age'
                 }, {
                     icon: 'map-marker',
-                    text: 'Mulhouse, Alsace',
+                    text: 'Mulhouse, France',
                     itemprop: 'address'
                 }, {
                     icon: 'graduation-cap',
-                    text: 'Master MIAGE',
+                    text: 'MIAGE Master',
                     itemprop: 'award'
                 }, {
                     icon: 'id-card-o',
-                    text: 'Drivers license B',
+                    text: 'Driving license B',
                     itemprop: 'award'
                 }, {
                     icon: 'at',
@@ -56,7 +56,7 @@ const data = {
                     root: 'div'
                 },
                 data: [{
-                    name: 'Programmation',
+                    name: 'Programming',
                     icon: 'code'
                 },
                 {
@@ -64,7 +64,7 @@ const data = {
                     icon: 'gamepad'
                 },
                 {
-                    name: 'Enigma',
+                    name: 'Enigmas',
                     icon: 'puzzle-piece'
                 },
                 {
@@ -72,7 +72,7 @@ const data = {
                     icon: 'book'
                 },
                 {
-                    name: 'Pastry-making',
+                    name: 'Baking',
                     icon: 'birthday-cake'
                 }]
             }, {
@@ -123,12 +123,12 @@ const data = {
                 data: [{
                     content: `Curious and passionate, I regularly keep up to date with the latest trends in software and web programming through an active technology watch.`,
                 }, {
-                    content: `Rigorous, organized and conscientious, I adapt easily to new situations and to the requirements of working in a team or independently.`,
+                    content: `Rigorous, organized and conscientious, I easily adapt to new situations and environments. Being customer oriented, I am able to transform client requirements into valuable delivrables.`,
                 }, {
-                    content: `Serious and diligent, I make it a point of honor to produce quality work while constantly evolving..`,
+                    content: `Serious and diligent, I make it a point of honor to only produce quality work.`,
                 }]
             }, {
-                title: 'Competences',
+                title: 'Skills & Competencies',
                 subtitle: 'What can I do?',
                 template: {
                     name: 'competence-group-template',
@@ -136,25 +136,24 @@ const data = {
                     root: '.comp-group'
                 },
                 data: [{
-                    header: 'Programmation',
+                    header: 'Programming',
                     comps: '<strong>Javascript</strong>, <strong>SQL</strong>, Python, C++, Qt, C, Java',
-                    notions: 'C# (current training), Typescript, Android, MAUI'
+                    notions: 'C#, Typescript, Android, MAUI'
                 }, {
                     header: 'Web',
                     comps: '<strong>NodeJS</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, Sass, SCSS, less, Express, Socket.io, Vue, SEO, PHP, CakePHP, Symfony',
-                    notions: 'Blazor (training), SyncFusion'
+                    notions: 'Blazor, SyncFusion'
                 }, {
                     header: 'CI/CD',
                     comps: '<strong>Git</strong>, <strong>Docker</strong>, <strong>Github Actions</strong>, Docker Swarn',
                     notions: 'AWS, Azure, Ansible, Jenkins, Kubernetes'
                 }, {
                     header: 'Office Software',
-                    comps: '<strong>Linux</strong>, <strong>Windows</strong>, <strong>Excel</strong>, <strong>LaTeX</strong>, Word, Powerpoint, Access, Office365, GSuite', 
+                    comps: '<strong>Linux</strong>, <strong>Windows</strong>, <strong>LaTeX</strong>, <strong>GSuite</strong>, <strong>Microsoft Office</strong>', 
                     notions: 'macOS'
                 }, {
                     header: 'Languages',
-                    comps: 'French (mother tongue), English (TOEIC)',
-                    notions: 'German, Japanese, Esperanto'
+                    comps: 'French: mother tongue<br/>English: fluent (reading, writing, speaking)<br/>Notions of German, Japanese and Esperanto',
                 }]
             }],
         }]
@@ -164,7 +163,7 @@ const data = {
         tab: 'Timeline',
         columns: [{
             articles: [{
-                title: 'Background',
+                title: 'Experiences',
                 subtitle: 'Where do I come from?',
                 template: {
                     name: 'timeline-template',
@@ -177,13 +176,15 @@ const data = {
                     icon_text: 'Job',
                     start: '2017',
                     end: '2025',
-                    title: 'IT Engineer',
-                    location: 'Syentys, Mulhouse',
+                    title: 'Software Development Engineer & Solution Architect',
+                    location: 'Syentys, France',
                     description: `<ul>
                     <li>Odoo ERP integration for various customers, including dental equipment manufacturers, butchers, financial journalists, pizza vending machine manufacturers, etc.</li>
-                    <li>Tasks as developer, project manager and solution architect.</li>
-                    <li>Contribution to the improvement of development and deployment procedures.</li>
-
+                    <li>Project Manager: planning and follow-ups with the team and the customer.</li>
+                    <li>Solution Architect: analysing and challenging customer's requirements with the default features of the solution, translating business requirements into technical tasks for optimal implementation.</li>
+                    <li>Technical Advisor: Odoo functional and technical expertise, Docker and Linux knowledge, code reviews.</li>
+                    <li>Improvement of development and deployment procedures: teaching developers to use debbuging tools, installation and deployement procedures on Linux hosts.</li>
+                    <li>R&D for C#-based solution for building security system.</li>
                     </ul>`,
                     technologies: `ERP, Python, JS, HTML, Java, Talend, CI/CD, Github, AWS, Azure`,
                 }, {
@@ -192,11 +193,11 @@ const data = {
                     icon_text: 'Internship',
                     start: '02/2017',
                     end: '07/2017',
-                    title: 'Stage de M2',
-                    location: 'Syentys, Mulhouse',
+                    title: 'Master Internship',
+                    location: 'Syentys, France',
                     description: `<ul>
-                    <li>Development of modules for Odoo ERP integration at a dental products manufacturer.</li>
-                    <li>Research into the feasibility of an on-board version of Odoo in artisan workshops or vehicles.</li>
+                    <li>Feasibility study of an embeded hardware and software version of Odoo in craftmanship's factories and vehicles.</li>
+                    <li>Development of Odoo modules for a project with a dental products manufacturer.</li>
                     </ul>`,
                     technologies: `ERP, Python, JS, HTML`,
                 }, {
@@ -205,17 +206,17 @@ const data = {
                     icon_text: 'Education',
                     start: '2012',
                     end: '2017',
-                    title: 'Master MIAGE',
-                    location: 'UHA, Mulhouse',
-                    description: '(Méthodes Informatiques Appliquées à la Gestion d\'Entreprise), Upper Second Class Honours.'
+                    title: 'MIAGE Master',
+                    location: 'UHA Mulhouse, France',
+                    description: 'Computer Methods Applied to Business Management, valedictorian, diploma recieved with honours.'
                 }, {
                     id: 'meta4',
                     icon: 'briefcase',
                     icon_text: 'Internship',
                     start: '05/2015',
                     end: '09/2015',
-                    title: 'L3 Internship',
-                    location: 'META4, Mulhouse',
+                    title: 'Bachelor Internship',
+                    location: 'META4, France',
                     description: 'Development of an internal workflow-based package management and delivery tool.',
                     technologies: `Access, PHP, JS, HTML`,
                 }, {
@@ -223,9 +224,9 @@ const data = {
                     icon: 'graduation-cap',
                     icon_text: 'Education',
                     start: '2012',
-                    title: 'French Scientific A-levels',
-                    location: 'Lycée Louis Armand, Mulhouse',
-                    description: 'Engineering Sciences option, specialising in Math, First Class Honours.'
+                    title: 'French Scientific A-level',
+                    location: 'Lycée Louis Armand, France',
+                    description: 'Engineering Sciences option, specialised in mathematics, valedictorian, diploma recieved with honours.'
                 }]
             }]
         }]
