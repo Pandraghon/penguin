@@ -61,8 +61,7 @@
 .timeline-content {
   position: relative;
   margin-left: 40px;
-  padding: .5em;
-  padding-right: 0;
+  padding: .1em 0 .1em .5em;
   border-radius: 4px;
   border-left: 1px solid $subtitle-color;
   overflow: hidden;
@@ -83,15 +82,18 @@
 
     &:last-child {
       margin-bottom: 0;
+      margin-top: 4px;
     }
   }
 
   ul {
     padding-inline-start: 16px;
+    margin: 0;
   }
 
   .timeline-name {
     margin-top: 0;
+    margin-bottom: 4px;
   }
 
   .timeline-date {

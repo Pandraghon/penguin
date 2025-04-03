@@ -182,7 +182,7 @@ const data = {
                     <li>Odoo ERP integration and maintenance for various customers, including dental equipment manufacturers, butchers, financial journalists, pizza vending machine manufacturers, etc.</li>
                     <li>Customers' data migration from their previous system to Odoo ERP.</li>
                     <li>Odoo Connectors with other APIs such as Prestashop, etc.</li>
-                    <li>Training with customer</li>
+                    <li>Functional and technical training sessions with customers.</li>
                     <li>Project Manager: planning (Agile) / team management, test definition and monitoring (Installation Qualification, Operational Qualification, Performance Qualification) and direct interface with the customer.</li>
                     <li>Solution Architect: analysing and challenging customer's requirements with the default features of the solution, translating business requirements into technical tasks for optimal implementation.</li>
                     <li>Technical Advisor: Odoo functional and technical expertise, Docker and Linux technical reference, organization of code reviews with the developers.</li>
@@ -235,11 +235,11 @@ const data = {
         }]
     }, {
         id: 'portfolio',
-        title: 'Portfolio',
+        title: 'Portfolio (1/2)',
         tab: 'Portfolio',
         columns: [{
             articles: [{
-                title: 'Portfolio',
+                title: 'Portfolio (1/2)',
                 subtitle: 'What have I done?',
                 template: {
                     name: 'portfolio-template',
@@ -308,10 +308,10 @@ const data = {
         }]
     }, {
         id: 'portfolio2',
-        title: 'Portfolio (more)',
+        title: 'Portfolio (2/2)',
         columns: [{
             articles: [{
-                title: 'Portfolio (more)',
+                title: 'Portfolio (2/2)',
                 subtitle: 'What have I done?',
                 template: {
                     name: 'portfolio-template',
