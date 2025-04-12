@@ -28,7 +28,7 @@ const data = {
                     itemprop: 'name'
                 }, {
                     icon: 'birthday-cake',
-                    text: 31, //DateTime::createFromFormat('d/m/Y', '10/01/1994', new DateTimeZone('Europe/Paris'))->diff(new DateTime('now', new DateTimeZone('Europe/Paris')))->y . ' ans',
+                    text: '10/Jan/1994',
                     itemprop: 'age'
                 }, {
                     icon: 'map-marker',
@@ -123,9 +123,9 @@ const data = {
                 data: [{
                     content: `Curieux et passionné, je me tiens régulièrement informé des dernières tendances en programmation logicielle et web grâce à une veille technologique active.`,
                 }, {
-                    content: `Rigoureux, organisé et consciencieux, je m’adapte facilement aux nouvelles situations et aux exigences du travail en équipe comme en autonomie.`,
+                    content: `Rigoureux, organisé et consciencieux, je m’adapte facilement aux nouvelles situations et environnements. Orienté client, je suis capable de transformer les exigences des clients en livrables de qualité.`,
                 }, {
-                    content: `Sérieux et appliqué, je mets un point d'honneur à produire un travail de qualité tout en restant en constante évolution.`,
+                    content: `Sérieux et appliqué, je mets un point d'honneur à seulement produire un travail de qualité.`,
                 }]
             }, {
                 title: 'Compétences',
@@ -138,23 +138,22 @@ const data = {
                 data: [{
                     header: 'Programmation',
                     comps: '<strong>Javascript</strong>, <strong>SQL</strong>, Python, C++, Qt, C, Java',
-                    notions: 'C# (formation en cours), Typescript, Android, MAUI'
+                    notions: 'C#, Typescript, Android, MAUI'
                 }, {
                     header: 'Web',
                     comps: '<strong>NodeJS</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, Sass, SCSS, less, Express, Socket.io, Vue, SEO, PHP, CakePHP, Symfony',
-                    notions: 'Blazor (formation), SyncFusion'
+                    notions: 'Blazor, SyncFusion'
                 }, {
                     header: 'CI/CD',
                     comps: '<strong>Git</strong>, <strong>Docker</strong>, <strong>Github Actions</strong>, Docker Swarn',
                     notions: 'AWS, Azure, Ansible, Jenkins, Kubernetes'
                 }, {
                     header: 'Bureautique',
-                    comps: '<strong>Linux</strong>, <strong>Windows</strong>, <strong>Excel</strong>, <strong>LaTeX</strong>, Word, Powerpoint, Access, Office365, GSuite', 
+                    comps: '<strong>Linux</strong>, <strong>Windows</strong>, <strong>LaTeX</strong>, <strong>GSuite</strong>, <strong>Microsoft Office</strong>', 
                     notions: 'macOS'
                 }, {
                     header: 'Langues',
-                    comps: 'Français (langue maternelle), Anglais (TOEIC)',
-                    notions: 'Allemand, Japonais, Esperanto'
+                    comps: 'Français : langue maternelle<br/>Anglais : TOEIC<br/>Notions d\'allemand, de japonais et d\'esperanto'
                 }]
             }],
         }]
@@ -181,9 +180,14 @@ const data = {
                     location: 'Syentys, Mulhouse',
                     description: `<ul>
                     <li>Intégration de l'ERP Odoo pour différents clients, allant du fabricant de matériels dentaires au boucher-charcutier, en passant par du journalisme financier, du fabricant de distributeurs de pizza, ...</li>
-                    <li>Missions de développeur, chef de projet et architecte solution.</li>
-                    <li>Contribution à l'amélioration des procédures de développement et de déploiement.</li>
-
+                    <li>Migration de données des clients depuis leur système précédent vers l'ERP Odoo.</li>
+                    <li>Connecteurs Odoo vers d'autres API comme Prestashop, ...</li>
+                    <li>Séances de formation fonctionnelle et technique avec les clients.</li>
+                    <li>Chef de projet : planification (Agile) / gestion d'équipe, définition et suivi des tests (Installation Qualification, Operational Qualification, Performance Qualification) et interface directe avec le client.</li>
+                    <li>Architecte solution : analyse et challenge des exigences du client par rapport aux fonctionnalités par défaut de la solution, traduction des exigences métier en tâches techniques pour une implémentation optimale.</li>
+                    <li>Référent technique : expertise fonctionnelle et technique d'Odoo, référent technique pour Linux et Docker, organisation de revues de code avec les développeurs.</li>
+                    <li>Amélioration des procédures de développement et de déploiement : formation des développeurs à l'utilisation des outils de débogage, procédures d'installation et de déploiement sur les hôtes Linux.</li>
+                    <li>R&D pour une solution basée en C# pour les systèmes de sécurité des bâtiments.</li>
                     </ul>`,
                     technologies: `ERP, Python, JS, HTML, Java, Talend, CI/CD, Github, AWS, Azure`,
                 }, {
@@ -192,7 +196,7 @@ const data = {
                     icon_text: 'Stage',
                     start: '02/2017',
                     end: '07/2017',
-                    title: 'Stage de M2',
+                    title: 'Développeur (Stage de M2)',
                     location: 'Syentys, Mulhouse',
                     description: `<ul>
                     <li>Développement de modules pour l'intégration de l'ERP Odoo chez un fabricant de produits dentaires.</li>
@@ -214,7 +218,7 @@ const data = {
                     icon_text: 'Stage',
                     start: '05/2015',
                     end: '09/2015',
-                    title: 'Stage de L3',
+                    title: 'Développeur (Stage de L3)',
                     location: 'META4, Mulhouse',
                     description: 'Développement d\'un outil en interne de gestion et delivraison de packages à travers un workflow.',
                     technologies: `Access, PHP, JS, HTML`,

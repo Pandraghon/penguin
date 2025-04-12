@@ -184,7 +184,7 @@ const data = {
                     <li>Odoo Connectors with other APIs such as Prestashop, etc.</li>
                     <li>Functional and technical training sessions with customers.</li>
                     <li>Project Manager: planning (Agile) / team management, test definition and monitoring (Installation Qualification, Operational Qualification, Performance Qualification) and direct interface with the customer.</li>
-                    <li>Solution Architect: analysing and challenging customer's requirements with the default features of the solution, translating business requirements into technical tasks for optimal implementation.</li>
+                    <li>Solution Architect: analyzing and challenging customer's requirements with the default features of the solution, translating business requirements into technical tasks for optimal implementation.</li>
                     <li>Technical Advisor: Odoo functional and technical expertise, Docker and Linux technical reference, organization of code reviews with the developers.</li>
                     <li>Improvement of development and deployment procedures: teaching developers to use debbuging tools, installation and deployment procedures on Linux hosts.</li>
                     <li>R&D for C#-based solution for building security system.</li>
