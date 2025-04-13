@@ -221,7 +221,7 @@
     </template>
 
     <template id="info-template">
-        <div class="info-group">
+        <div class="info-group {{ if data.class }}{{ data.class }}{{ endif }}">
             <i class="fa fa-fw fa-{{ data.icon }} info-icon"></i>
             <span class="info-text" itemprop="{{ data.itemprop }}">{{ data.text }}</span>
         </div>

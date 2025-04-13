@@ -46,6 +46,11 @@ const data = {
                     icon: 'at',
                     text: 'salbasser[at]gmail.com',
                     itemprop: 'email'
+                }, {
+                    icon: 'phone',
+                    text: '+33  6 67 12 53 50',
+                    itemprop: 'phone',
+                    class: 'only-print'
                 }]
             }, {
                 title: 'Hobbies',
@@ -121,7 +126,7 @@ const data = {
                     root: 'p'
                 },
                 data: [{
-                    content: `Curious and passionate, I regularly keep up to date with the latest trends in software and web programming through an active technology watch.`,
+                    content: `Curious and passionate in development, I regularly keep up to date with the latest trends in software and web programming through an active technology watch.`,
                 }, {
                     content: `Rigorous, organized and conscientious, I easily adapt to new situations and environments. Being customer oriented, I am able to transform client requirements into valuable deliverables.`,
                 }, {
@@ -182,7 +187,7 @@ const data = {
                     <li>Odoo ERP integration and maintenance for various customers, including dental equipment manufacturers, butchers, financial journalists, pizza vending machine manufacturers, etc.</li>
                     <li>Customers' data migration from their previous system to Odoo ERP.</li>
                     <li>Odoo Connectors with other APIs such as Prestashop, etc.</li>
-                    <li>Functional and technical training sessions with customers.</li>
+                    <li>Functional and technical customer training sessions: how to use standard and customized features of Odoo ERP, how to build and maintain simple modules using either code or Odoo Studio (graphical builder).</li>
                     <li>Project Manager: planning (Agile) / team management, test definition and monitoring (Installation Qualification, Operational Qualification, Performance Qualification) and direct interface with the customer.</li>
                     <li>Solution Architect: analyzing and challenging customer's requirements with the default features of the solution, translating business requirements into technical tasks for optimal implementation.</li>
                     <li>Technical Advisor: Odoo functional and technical expertise, Docker and Linux technical reference, organization of code reviews with the developers.</li>
@@ -235,11 +240,11 @@ const data = {
         }]
     }, {
         id: 'portfolio',
-        title: 'Portfolio (1/2)',
+        title: 'Project Portfolio (1/2)',
         tab: 'Portfolio',
         columns: [{
             articles: [{
-                title: 'Portfolio (1/2)',
+                title: 'Project Portfolio (1/2)',
                 subtitle: 'What have I done?',
                 template: {
                     name: 'portfolio-template',
@@ -308,10 +313,10 @@ const data = {
         }]
     }, {
         id: 'portfolio2',
-        title: 'Portfolio (2/2)',
+        title: 'Project Portfolio (2/2)',
         columns: [{
             articles: [{
-                title: 'Portfolio (2/2)',
+                title: 'Project Portfolio (2/2)',
                 subtitle: 'What have I done?',
                 template: {
                     name: 'portfolio-template',
