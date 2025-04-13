@@ -46,6 +46,11 @@ const data = {
                     icon: 'at',
                     text: 'salbasser[at]gmail.com',
                     itemprop: 'email'
+                }, {
+                    icon: 'phone',
+                    text: '+33  6 67 12 53 50',
+                    itemprop: 'phone',
+                    class: 'only-print'
                 }]
             }, {
                 title: 'Centres d\'intérêt',
