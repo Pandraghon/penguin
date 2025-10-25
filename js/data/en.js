@@ -168,7 +168,7 @@ const data = {
         tab: 'Timeline',
         columns: [{
             articles: [{
-                title: 'Experiences',
+                title: 'Experiences (1/2)',
                 subtitle: 'Where do I come from?',
                 template: {
                     name: 'timeline-template',
@@ -224,7 +224,23 @@ const data = {
                     <li>Development of Odoo modules for a project with a dental products manufacturer.</li>
                     </ul>`,
                     technologies: `ERP, Python, JS, HTML`,
-                }, {
+                }]
+            }]
+        }]
+    }, {
+        id: 'portfolio',
+        title: 'Project Portfolio (1/2)',
+        tab: 'Portfolio',
+        columns: [{
+            articles: [{
+                title: 'Experiences (2/2)',
+                subtitle: 'Where do I come from?',
+                template: {
+                    name: 'timeline-template',
+                    class: 'timeline-container',
+                    root: '.timeline-block'
+                },
+                data: [{
                     id: 'miage',
                     icon: 'graduation-cap',
                     icon_text: 'Education',
@@ -252,14 +268,7 @@ const data = {
                     location: 'Lycée Louis Armand, France',
                     description: 'Engineering Sciences option, specialised in mathematics, valedictorian, diploma recieved with honours.'
                 }]
-            }]
-        }]
-    }, {
-        id: 'portfolio',
-        title: 'Project Portfolio (1/2)',
-        tab: 'Portfolio',
-        columns: [{
-            articles: [{
+            }, {
                 title: 'Project Portfolio (1/2)',
                 subtitle: 'What have I done?',
                 template: {
@@ -300,8 +309,22 @@ const data = {
                     description: 'Tool for building and displaying Delaunay triangulation.',
                     technologies: ['C++', 'Qt', 'interface', 'drawing', 'geometry'],
                     git: 'https://github.com/Pandraghon/TriaGUI'
+                }]
+            }]
+        }]
+    }, {
+        id: 'portfolio2',
+        title: 'Project Portfolio (2/2)',
+        columns: [{
+            articles: [{
+                title: 'Project Portfolio (2/2)',
+                subtitle: 'What have I done?',
+                template: {
+                    name: 'portfolio-template',
+                    class: 'portfolio-container',
+                    root: '.project'
                 },
-                {
+                data: [{
                     id: 'gw2icon',
                     name: 'GW2Icon',
                     for: 'Personal project',
@@ -324,22 +347,8 @@ const data = {
                     description: 'Name generator based on the Markov chain principle.',
                     technologies: ['C++', 'Qt'],
                     git: 'https://github.com/Pandraghon/anoname'
-                }]
-            }]
-        }]
-    }, {
-        id: 'portfolio2',
-        title: 'Project Portfolio (2/2)',
-        columns: [{
-            articles: [{
-                title: 'Project Portfolio (2/2)',
-                subtitle: 'What have I done?',
-                template: {
-                    name: 'portfolio-template',
-                    class: 'portfolio-container',
-                    root: '.project'
                 },
-                data: [{
+                {
                     id: 'pageotron',
                     name: 'Page-o-tron',
                     for: 'Personnal project',

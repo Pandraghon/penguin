@@ -224,7 +224,23 @@ const data = {
                     <li>Recherche sur la faisabilité d'une version embarquée d'Odoo dans des ateliers ou des véhicules d'artisans.</li>
                     </ul>`,
                     technologies: `ERP, Python, JS, HTML`,
-                }, {
+                }]
+            }]
+        }]
+    }, {
+        id: 'portfolio',
+        title: 'Portfolio',
+        tab: 'Portfolio',
+        columns: [{
+            articles: [{
+                title: 'Formation et expériences (suite)',
+                subtitle: 'D\'où je viens ?',
+                template: {
+                    name: 'timeline-template',
+                    class: 'timeline-container',
+                    root: '.timeline-block'
+                },
+                data: [{
                     id: 'miage',
                     icon: 'graduation-cap',
                     icon_text: 'Formation',
@@ -252,14 +268,7 @@ const data = {
                     location: 'Lycée Louis Armand, Mulhouse',
                     description: 'Option Sciences de l\'Ingénieur, spécialité Maths, mention Très Bien'
                 }]
-            }]
-        }]
-    }, {
-        id: 'portfolio',
-        title: 'Portfolio',
-        tab: 'Portfolio',
-        columns: [{
-            articles: [{
+            }, {
                 title: 'Portfolio',
                 subtitle: 'Ce que j\'ai fait ?',
                 template: {
@@ -300,8 +309,22 @@ const data = {
                     description: 'Outil de construction et de visualisation de triangulation de Delaunay sur plusieurs degrés.',
                     technologies: ['C++', 'Qt', 'interface', 'dessin', 'geométrie'],
                     git: 'https://github.com/Pandraghon/TriaGUI'
+                }]
+            }]
+        }]
+    }, {
+        id: 'portfolio2',
+        title: 'Portfolio (suite)',
+        columns: [{
+            articles: [{
+                title: 'Portfolio (suite)',
+                subtitle: 'Ce que j\'ai fait ?',
+                template: {
+                    name: 'portfolio-template',
+                    class: 'portfolio-container',
+                    root: '.project'
                 },
-                {
+                data: [{
                     id: 'gw2icon',
                     name: 'GW2Icon',
                     for: 'Projet personnel',
@@ -324,22 +347,8 @@ const data = {
                     description: 'Générateur de noms en se basant sur le principe de la chaîne de Markov.',
                     technologies: ['C++', 'Qt'],
                     git: 'https://github.com/Pandraghon/anoname'
-                }]
-            }]
-        }]
-    }, {
-        id: 'portfolio2',
-        title: 'Portfolio (suite)',
-        columns: [{
-            articles: [{
-                title: 'Portfolio (suite)',
-                subtitle: 'Ce que j\'ai fait ?',
-                template: {
-                    name: 'portfolio-template',
-                    class: 'portfolio-container',
-                    root: '.project'
                 },
-                data: [{
+                {
                     id: 'pageotron',
                     name: 'Page-o-tron',
                     for: 'Projet personnel',
