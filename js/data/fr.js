@@ -176,6 +176,22 @@ const data = {
                     root: '.timeline-block'
                 },
                 data: [{
+                    id: 'final',
+                    icon: 'briefcase',
+                    icon_text: 'Emploi',
+                    start: '2025',
+                    end: 'Aujourd\'hui',
+                    title: 'Chef de projet informatique',
+                    location: 'Final Advanced Materials, Didenheim',
+                    description: `<ul>
+                    <li>Prise en compte du cahier des charges des besoins RH : gestion des présences, du recrutement, des évaluations et des formations des employés.</li>
+                    <li>Constitution d'un plan d'action.</li>
+                    <li>Intégration et configuration des modules RH de l'ERP Odoo.</li>
+                    <li>Développements pour implémenter des fonctionnalités non natives à l'outil.</li>
+                    <li>Formations fonctionnelles et techniques des utilisateurs à l'utilisation et la personnalisation de l'ERP Odoo.</li>
+                    </ul>`,
+                    technologies: `ERP, Python, XML`,
+                }, {
                     id: 'syentys',
                     icon: 'briefcase',
                     icon_text: 'Emploi',
