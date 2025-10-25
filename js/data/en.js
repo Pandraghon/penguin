@@ -181,7 +181,7 @@ const data = {
                     icon_text: 'Job',
                     start: '2025',
                     end: 'Today',
-                    title: 'Chef de projet informatique',
+                    title: 'IT Project Manager',
                     location: 'Final Advanced Materials, France',
                     description: `<ul>
                     <li>Assessment of HR requirements: attendance management, recruitment, employee evaluations, and training.</li>
