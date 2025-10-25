@@ -176,6 +176,22 @@ const data = {
                     root: '.timeline-block'
                 },
                 data: [{
+                    id: 'final',
+                    icon: 'briefcase',
+                    icon_text: 'Job',
+                    start: '2025',
+                    end: 'Today',
+                    title: 'Chef de projet informatique',
+                    location: 'Final Advanced Materials, France',
+                    description: `<ul>
+                    <li>Assessment of HR requirements: attendance management, recruitment, employee evaluations, and training.</li>
+                    <li>Creation of an action plan.</li>
+                    <li>Integration and configuration of HR modules in Odoo ERP.</li>
+                    <li>Developments to implement features not native to the tool.</li>
+                    <li>Functional and technical training for users on the use and customization of the Odoo ERP.</li>
+                    </ul>`,
+                    technologies: `ERP, Python, XML`,
+                }, {
                     id: 'syentys',
                     icon: 'briefcase',
                     icon_text: 'Job',
