@@ -351,7 +351,7 @@ const data = {
                 {
                     id: 'pageotron',
                     name: 'Page-o-tron',
-                    for: 'Personnal project',
+                    for: 'Personal project',
                     description: 'Pages generator for the french MediaWiki of GW2, using data from the game\'s API.',
                     technologies: ['NodeJS', 'MediaWiki', 'API'],
                     git: 'https://github.com/Pandraghon/page-o-tron',
@@ -359,7 +359,7 @@ const data = {
                 }, {
                     id: 'amongus',
                     name: 'BetterSabotage & UnknownImpostor',
-                    for: 'Personnal projects',
+                    for: 'Personal projects',
                     description: 'Code development (mods) for the game AmongUs, injecting additional features.',
                     technologies: ['C#', 'Modding'],
                     git: 'https://github.com/Pandraghon/BetterSabotage',
